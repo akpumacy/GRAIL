@@ -1,4 +1,4 @@
-# Redimi-GiftCard-SmartContract
+# GRAIL Implementation/ Existing Architecture
 
 Redimi solution comprises of several modules where each module accomplishes a crucial task. Following is the list of these modules:
 
