@@ -12,7 +12,7 @@ For the purpose of demonstration, the gift cards can behave as a fungible tokens
 
 ## Ethereum <> XRPL Migration
 
-The actual implementation of GRAIL use case on XRPL can be found under [GRAIL Use Case](/GRAIL%20Use%20Case/). The scripts (developed in JS) demonstrate the implementation plan of Redimi Gift Cards in form of Tokens. These scripts are integrated in the XRPL version of our PP API, developed using [STRAPI](https://strapi.io/), a headless content management system. The *REST API documentation* for GRAIL documentation is also [available](https://documenter.getpostman.com/view/12104204/2s93eVYZeV).
+The actual implementation of GRAIL use case on XRPL can be found under [GRAIL Use Case](/GRAIL%20Use%20Case/). The scripts (developed in JS) demonstrate the implementation plan of Redimi Gift Cards in form of Tokens. These scripts are integrated in the XRPL version of our PP API, developed using [STRAPI](https://strapi.io/), a headless content management system. The *REST API documentation* for GRAIL implementation is also [available](https://documenter.getpostman.com/view/12104204/2s93eVYZeV).
 
 Following sections describe further our existing solution and its sub-modules: 
 
