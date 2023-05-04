@@ -22,6 +22,10 @@ The [mobile application](https://play.google.com/store/apps/details?id=com.redim
 
 Retailers can simply scan this gift card which will redirect them to a redeem portal website.
 
+![alt text](media/login.png "Login")
+![alt text](media/gift-cards.png "Gift Card Management")
+![alt text](media/redeem-portal.png "Redeem Portal")
+
 ### Purchase Portal
 
 To allow customers to purchase gift cards with easy and comfort, a [purchase portal](https://redimi.net/gift-cards) is setup on the Redimi's website where customers can choose a mall and amount of gift card they wish to purchase. Multiple payment methods are integrated at checkout for the ease of the customer.
