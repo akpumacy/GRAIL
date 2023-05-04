@@ -2,9 +2,9 @@
 
 GRAIL brings the existing Redimi solution to XRPL.
 
-Redimi solution comprises of several modules where each module accomplishes a crucial task. Following is the list of these modules:
+[Redimi](https://redimi.net) solution comprises of several modules where each module accomplishes a crucial task. Following is the list of these modules:
 
-1. Ethereum based smart contracts: solidity contracts to manage gift card functionalities
+1. [Ethereum based smart contracts](/Solidity%20Smart%20Contracts/): solidity contracts to manage gift card functionalities
 2. Mobile Wallet Application: allows customers to manage their gift cards, transactions and a lot more...
 3. Platform Provider API: connects all modules together
 
