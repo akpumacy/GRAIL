@@ -6,13 +6,13 @@ GRAIL brings the existing Redimi solution to XRPL.
 
 1. [Ethereum based smart contracts](/Solidity%20Smart%20Contracts/): solidity contracts to manage gift card functionalities
 2. Mobile Wallet Application: allows customers to manage their gift cards, transactions and a lot more...
-3. Platform Provider API: connects all modules together
+3. Platform Provider (PP) API: connects all modules together
 
 For the purpose of demonstration, the gift cards can behave as a fungible tokens since they are partially redeemable and transferable. Therefore, a token can be created as shown in [Tokenomy](/XRP%20Scripts/1_Tokenomy/). For transfering of tokens, we have setup multiple wallets including a cold wallet. We have also added token transfer functionality to already available wallet management application as shown in [Wallet Management](/XRP%20Scripts/2_Account_Management/). This allows wallets to transfer tokens directly from the app.
 
 ## Ethereum <> XRPL Migration
 
-The actual implementation of GRAIL use case on XRPL can be found under [GRAIL Use Case](/GRAIL%20Use%20Case/). The scripts (developed in JS) demonstrate the implementation plan of Redimi Gift Cards in form of Tokens.
+The actual implementation of GRAIL use case on XRPL can be found under [GRAIL Use Case](/GRAIL%20Use%20Case/). The scripts (developed in JS) demonstrate the implementation plan of Redimi Gift Cards in form of Tokens. These scripts are integrated in the XRPL version of our PP API, developed using [STRAPI](https://strapi.io/), a headless content management system.
 
 Following sections describe further our existing solution and its sub-modules: 
 
