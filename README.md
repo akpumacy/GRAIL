@@ -22,9 +22,7 @@ The [mobile application](https://play.google.com/store/apps/details?id=com.redim
 
 Retailers can simply scan this gift card which will redirect them to a redeem portal website.
 
-<img src="https://github.com/akpumacy/GRAIL/blob/main/media/login.jpg" alt="Login Page" width="30%" height="30%">
-<img src="https://github.com/akpumacy/GRAIL/blob/main/media/gift-cards.jpg" alt="Gift Card Management" width="30%" height="30%">
-<img src="https://github.com/akpumacy/GRAIL/blob/main/media/redeem-portal.jpg" alt="Redeem Portal" width="30%" height="30%">
+<img src="https://github.com/akpumacy/GRAIL/blob/main/media/login.jpg" alt="Login Page" width="30%" height="30%"><img src="https://github.com/akpumacy/GRAIL/blob/main/media/gift-cards.jpg" alt="Gift Card Management" width="30%" height="30%"><img src="https://github.com/akpumacy/GRAIL/blob/main/media/redeem-portal.jpg" alt="Redeem Portal" width="30%" height="30%">
 
 ### Purchase Portal
 
