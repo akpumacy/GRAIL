@@ -22,9 +22,9 @@ The [mobile application](https://play.google.com/store/apps/details?id=com.redim
 
 Retailers can simply scan this gift card which will redirect them to a redeem portal website.
 
-![alt text](media/login.jpg "Login" | width=100)
-![alt text](media/gift-cards.jpg "Gift Card Management" | width=100)
-![alt text](media/redeem-portal.jpg "Redeem Portal" | width=100)
+![alt text](media/login.jpg "Login")
+![alt text](media/gift-cards.jpg "Gift Card Management")
+![alt text](media/redeem-portal.jpg "Redeem Portal")
 
 ### Purchase Portal
 
