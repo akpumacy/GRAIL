@@ -16,7 +16,7 @@ async function main() {
 
         //----- load customer wallet
         const customer_wallet = xrpl.Wallet.fromSeed(customer_wallet_seed) // Test secret; don't use for real
-        console.log(`Customer Wallet Address: ${customer_wallet.address}`)
+        console.log(customer_wallet)
         const customer_balance = await client.getXrpBalance(customer_wallet.address)
         console.log(`Customer Wallet XRP Balance: ${customer_balance}`);
 
