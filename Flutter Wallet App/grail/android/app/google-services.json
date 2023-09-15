@@ -1,0 +1,254 @@
+{
+  "project_info": {
+    "project_number": "639845521193",
+    "project_id": "redimi",
+    "storage_bucket": "redimi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639845521193:android:ae7d0edfc8eac946e2c938",
+        "android_client_info": {
+          "package_name": "com.grail.grailapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639845521193-2uj6el5ttgmk32gruli3bsomda6gsdee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grail.grailapp",
+            "certificate_hash": "9ffdbf8593bfe416ebb2a3647604b2555b04d629"
+          }
+        },
+        {
+          "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-_9ix2z_ho4DrcYI2UAOek4zEjO1HdGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639845521193-3ro3mgnu9jh0vla68eub78vl1aqhr1f5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.redimiGmbH.redimiApp",
+                "app_store_id": "6449304226"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639845521193:android:b3ba12210226ef65e2c938",
+        "android_client_info": {
+          "package_name": "com.grailGmbH.grail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639845521193-jlje5bhrarmgj6dgace6dj1ge63r0954.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grailGmbH.grail",
+            "certificate_hash": "9ffdbf8593bfe416ebb2a3647604b2555b04d629"
+          }
+        },
+        {
+          "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-_9ix2z_ho4DrcYI2UAOek4zEjO1HdGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639845521193-3ro3mgnu9jh0vla68eub78vl1aqhr1f5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.redimiGmbH.redimiApp",
+                "app_store_id": "6449304226"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639845521193:android:d1b8ded94c0b0b1be2c938",
+        "android_client_info": {
+          "package_name": "com.pumacy.redimiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639845521193-4o2u9peaenoe95fsdms4fj7p9nqtaatv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pumacy.redimiapp",
+            "certificate_hash": "76bc12f41cb43597a9130b9e2250108fa5eeed59"
+          }
+        },
+        {
+          "client_id": "639845521193-8kdpcmri1mlbu5guiovabm6vqcm2s58m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pumacy.redimiapp",
+            "certificate_hash": "84fe3dc16b93d939b88a91d15ea4e56eea56d063"
+          }
+        },
+        {
+          "client_id": "639845521193-epqvlknemblp11r90geit3dmr6uqkaqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pumacy.redimiapp",
+            "certificate_hash": "fd05c7dd2fc0da89967d71cb629b41976c160a3d"
+          }
+        },
+        {
+          "client_id": "639845521193-qiq3g9s2llh0jg2pali7dfl6c90gjfuv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pumacy.redimiapp",
+            "certificate_hash": "dc77b1ae0b90d218da9948754d8fccd7ad370dc9"
+          }
+        },
+        {
+          "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-_9ix2z_ho4DrcYI2UAOek4zEjO1HdGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639845521193-3ro3mgnu9jh0vla68eub78vl1aqhr1f5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.redimiGmbH.redimiApp",
+                "app_store_id": "6449304226"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639845521193:android:e119b2a00f909ac1e2c938",
+        "android_client_info": {
+          "package_name": "com.redimigmbh.redimi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639845521193-7g5olgtng8fhah8ukhdgcq2h8149qji8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redimigmbh.redimi",
+            "certificate_hash": "fd05c7dd2fc0da89967d71cb629b41976c160a3d"
+          }
+        },
+        {
+          "client_id": "639845521193-b1cgao121otpio99o7art77gsi640hh9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redimigmbh.redimi",
+            "certificate_hash": "9ffdbf8593bfe416ebb2a3647604b2555b04d629"
+          }
+        },
+        {
+          "client_id": "639845521193-bmkvab0fsguqv78k9f4fgpn2l798vqht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redimigmbh.redimi",
+            "certificate_hash": "dc77b1ae0b90d218da9948754d8fccd7ad370dc9"
+          }
+        },
+        {
+          "client_id": "639845521193-lv6epuemqp8004mqrg37oaq4an8uefor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redimigmbh.redimi",
+            "certificate_hash": "76bc12f41cb43597a9130b9e2250108fa5eeed59"
+          }
+        },
+        {
+          "client_id": "639845521193-njf4qr0mshmeh4fm0l7667109uks2u3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redimigmbh.redimi",
+            "certificate_hash": "84fe3dc16b93d939b88a91d15ea4e56eea56d063"
+          }
+        },
+        {
+          "client_id": "639845521193-oejnror5odi3njigsral17lil3rorvao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redimigmbh.redimi",
+            "certificate_hash": "ccb521895dc079f7c332fa02077a8d26e0af6d4e"
+          }
+        },
+        {
+          "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-_9ix2z_ho4DrcYI2UAOek4zEjO1HdGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639845521193-e48c8d4u8vlvec21pjdcpo2hclgbnh1e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639845521193-3ro3mgnu9jh0vla68eub78vl1aqhr1f5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.redimiGmbH.redimiApp",
+                "app_store_id": "6449304226"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

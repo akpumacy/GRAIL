@@ -1,0 +1,370 @@
+{
+  "language_selected": "Deutsch",
+
+  "balance_length" : "Balance-Länge",
+  "rewarded_balance": "Belohnung",
+  "updated_date": "Neues Datum",
+  "balances": "Salden",
+  "balance_code": "Guthabenkarten-ID",
+  "currency_code": "Währungscode",
+
+  "convert_rewards": "Prämien umwandeln",
+  "shop_username": "Shop-Benutzername, z. B. shop123...",
+  "reward_want_to_convert" : "Geben Sie die Prämien ein, die Sie umwandeln möchten",
+  "are_you_sure_you_want_to_convert_rewards": "Sind Sie sicher, dass Sie Prämien umwandeln möchten?",
+
+  "sign_up": "Anmeldung...",
+  "changing_password": "Passwort ändern...",
+  "sign_out_confirmation": "Sind Sie sicher, dass Sie sich abmelden möchten?",
+  "invalid_amount": "Ungültige Menge",
+
+  "username_min_char": "Benutzername (mindestens 5 Zeichen)",
+
+  "face_id_auth": "Face-ID Authentifizierung",
+
+  "splash_text" : "Ihre App für digitale Gutscheine\n und Coupons",
+
+  "password_not_matched": "Ihr altes Passwort ist falsch",
+
+  "giftCard_Amount_transfer_success": "Geschenkkartenbetrag erfolgreich übertragen",
+  "giftCard_Ownership_transfer_success": "Der Besitz der Geschenkkarte wurde erfolgreich übertragen",
+
+  "incorrect_username": "Falscher Benutzername oder Passwort",
+  "invalid_code": "Ungültiger Code",
+
+  "terms_and_conditions" : "Geschäftsbedingungen",
+  "first_term_and_condition" : "Indem ich dieses Kästchen ankreuze, habe ich die Nutzungsbedingungen dieses Dienstes gelesen und stimme ihnen zu",
+  "second_term_and_condition" : "(FREIWILLIG) Ich stimme zu, dass mein Benutzername in Geschäften angezeigt wird, um personalisierte Angebote zu erhalten und mein Einkaufserlebnis über Data Analytics zu verbessern",
+
+  "delete_account": "Konto löschen",
+  "delete_account_info": "Möchten Sie Ihr Konto wirklich endgültig löschen?",
+
+  "transfer_gift_card_amount" : "Geschenkgutscheinbetrag überweisen",
+  "do_you_wish_to_transfer" : "Möchten Sie die Geschenkkarte übertragen?",
+  "Cancel" : "Stornieren",
+
+  "registered" : "Sie haben sich erfolgreich registriert",
+  "update_profile_text" : "Aktualisieren",
+  "faqs_text" : "Häufig gestellte Fragen",
+  "privacy_text" : "Datenschutz-Bestimmungen",
+
+  "error_text" : "Fehler",
+  "something_went_wrong_text" : "Etwas ist schief gelaufen, Daten konnten nicht abgerufen werden",
+  "success_text" : "Erfolg",
+  "user_updated_successfully_text" : "Benutzer erfolgreich aktualisiert",
+  "password_not_match_text" : "Passwort stimmt nicht überein",
+  "enter_phone_number_text" : "Bitte Telefonnummer eingeben",
+  "min_8_char_pass_text" : "Passwort aus mindestens 8 Zeichen",
+  "internet_error_text" : "Das hat nicht funktioniert! Prüfe deine Internetverbindung",
+  "something_wrong_text" : "Etwas ist schief gelaufen",
+  "please_enter_password": "Bitte Passwort eingeben",
+  "please_enter_confirm_password": "Bitte bestätigen Sie Ihr Passwort",
+  "please_accept_terms" : "Bitte akzeptieren Sie die Bedingungen",
+
+  "enter_phone_verification_code_text" : "Geben Sie den Telefonbestätigungscode ein",
+  "cancel_text" : "Stornieren",
+  "verify_text" : "Verifizieren",
+  "password_changed-text" : "Ihr Passwort wurde geändert",
+  "fill_field_to_login_text" : "Bitte füllen Sie die Felder für die Anmeldung aus",
+
+  "user_name_already_exists" : "Benutzername existiert bereits",
+  "special_char_text" : "Sonderzeichen sind im Benutzernamen nicht erlaubt",
+  "username_short_text" : "Benutzername ist zu kurz",
+  "invalid_username_text" : "Ungültiger Benutzername",
+
+
+
+  "created_wallet_copy" : "Wallet Kopieren",
+  "created_wallet_gotosign" : "Zur Anmeldung",
+  "created_wallet_walletadd" : "Wallet Adresse",
+  "created_wallet_walletkey" : "Wallet Schlüssel",
+  "created_wallet_walletData" : "Wallet Daten",
+  "created_wallet_note" : "Hinweis: Dein Wallet Schlüssel ist privat und sollte nicht an Dritte weitergegeben werden! Wir empfehlen den Wallet Schlüssel extern zu speichern bzw. zu notieren. Falls der Wallet-Schlüssel verloren geht, können die Daten nicht wiederhergestellt werden!",
+  "created_walletadd_note" : "Dies ist die Adresse, mit der dich andere identifizieren können. Diese Adresse ist deine öffentliche Adresse und du kannst diese unbedenklich an Freunde, Familienmitglieder und Geschäft weitergeben, um Gutscheine zu kaufen und and andere zu übertragen. Das schöne dabei ist, du bleibst dabei anonym!",
+
+
+
+  "hi" : "Hallo,",
+  "logout" : "Abmelden",
+  "firstName" : "Vorname",
+  "secondName" : "Zweitname",
+  "password_text" : "Passwort",
+  "phone_text" : "   TELEFON   ",
+  "username_text" : "   NUTZERNAME   ",
+  "please_sign_in_to_continue" : "Bitte einloggen, um fortzufahren",
+  "phone_number_text" : "Telefonnummer",
+  "enter_username_text" : "Benutzernamen eingeben",
+  "main_login" : "Anmeldung",
+
+
+
+
+  "import_wallet" : "Brieftasche Importieren",
+  "import_wallet_note" : "Vorhandenen Wallet Schlüssel \nund neues Kennwort eingeben \nund deine Wallet zu aktivieren.",
+  "import_wallet_walletkey" : "Wallet Schlüssel e.g. 0x...",
+  "redimi_voucher_balance" : "Guthaben das Redimi-Gutscheins",
+
+
+  "main_note" : "Bereits Kunde? Gerne importieren wir eure Wallet!",
+  "main_register_note" : "Noch keinen Account? ",
+  "main_register" : "Registrieren",
+  "as_guest" : "Als Gast anmelden",
+  "or_text" : "ODER",
+  "sign_in_text" : "Anmeldung",
+
+  "forget_password_text" : "Passwort vergessen |",
+  "help" :" Hilfe | ",
+  "faq" :"FAQs",
+
+
+  "register_note" : "Willkommen in der XRP Grail-Community. \nGeben Sie Ihre Daten ein, damit wir \nIhnen Ihre eigene personalisierte Brieftasche erstellen können.",
+  "register_password"  : "Kennwort (mindestens 8 Zeichen)",
+  "register_gen_wallet"  : "Wallet erstellen",
+  "register_tel" : "Telefonnummer z.b., +49123456...",
+  "register_confirmPassword" : "Passwort bestätigen",
+  "register_not_confirm" : "Passwörter stimmen nicht überein",
+  "username_example_text" : "Benutzername z.B. johndoe123...",
+  "reset_password_text" : "Passwort zurücksetzen",
+  "finger_print" : "Authentifizierung per Fingerabdruck",
+  "others" :"Andere",
+  "language" : "Sprache",
+  "help_text" : "Hilfe",
+
+  "settings_aboutus"  : "Über uns",
+  "settings_finger"  : "Authentifizierung per Fingerabdruck",
+  "settings_pswd"  : "Kennwort ändern",
+  "settings_lang"  : "Change Language/Sprache ändern",
+  "settings_signout"  : "Abmelden",
+  "settings_pdtitle"  : "Zugang zu Wallet",
+  "settings_pdsubtitle"  : "Bitte warten Sie, während wir auf Ihre Wallet Informationen zugreifen ...",
+  "settings_copied"  : "Wallet in Zwischenablage kopiert.",
+  "settings_header"  : "Einstellungen",
+  "settings_contact_us": "Sie erreichen uns auch unter: ",
+
+
+  "trans_header": "Transaktionen",
+  "transdata_header"  : "Übersicht Transaktionsdaten",
+  "transdata_hash"  : "Transaktions-Hash/Quittung",
+  "transdata_action"  : "Transaktion",
+  "transdata_id" : "Gutschein-Code",
+  "transdata_sendwall"  : "Absender-Wallet",
+  "transdata_rcvwall"  : "Empfänger-Wallet",
+  "transdata_idfrom"  : "Gutschein-Code von",
+  "transdata_idto"  : "Gutschein-Code an",
+  "transdata_amount"  : "Betrag",
+  "transdata_createdat"  : "Erstellt am",
+  "transdata_webshop"  : "Shop",
+
+
+  "transown_continue"  : "Weiter",
+  "transown_header"  : "Gutschein vollständig übertragen",
+  "transown_button"  : "Gutschein übertragen",
+
+
+  "transam_header"  : "Gutschein-Anteil übertragen",
+  "transam_rcvadd"  : "Empfänger Adresse e.g. 0x....",
+  "transam_rcvid"  : "Empfänger Gutschein-Code z.b. 76db28e05....",
+  "transam_amount"  : "Gutscheinbetrag (in Eur)",
+  "Recipient_Gift_Card_Code": "(Optional) Gutscheincode des Empfängers, z. 76db28e05....",
+  "gift_card_amount": "Gutscheinkonto (in Euro)",
+  "Amount_Insufficient": "Menge nicht ausreichend",
+  "enter_amount": "Bitte Betrag eingeben",
+
+
+  "wallinfo_button"  : "   Wallet Adresse kopieren   ",
+
+
+  "vouch_header"  : "Gutscheindaten",
+  "vouch_id"  : "Gutschein-ID",
+  "vouch_code"  : "Geschenkkartencode",
+  "vouch_codeinstr"  : "Klicken Sie, um den Code zu kopieren",
+  "vouch_curr"  : "Aktueller Betrag",
+  "vouch_init"  : "Anfangsbetrag",
+  "vouch_valid"  : "Gültigkeit",
+  "vouch_redeem"  : "GESCHENKKARTE EINLÖSEN",
+  "vouch_chooseshop"  : "Filter",
+  "vouch_shopname" : "Geschäft",
+  "vouch_redeemshort"  : "Einlösen",
+  "vouch_validuntil" : "Gültig bis:",
+  "vouch_instrqrcode" : "Der QR-Code besteht aus folgenden Informationen:",
+  "vouch_instrnote" : "Hinweis: QR-Code ist nur 20 Sekunden gültig. \nKlicken Sie auf QR-Code, um erneut zu aktualisieren.",
+  "vouch_countdown" : "verbleibende Sekunden: ",
+  "vouch_totalBalance" : "Gesamtsaldo",
+  "vouch_totalVouchers": "Gutscheine: ",
+  "vouch_heading" : "Gutscheine",
+  "overview_heading" : "Überblick",
+  "date_text" : "Datum",
+  "back_text" : "Zurück",
+  "max_amount_to_redeem_text" : "Einzulösender Betrag (in EUR), max ",
+
+  "transfer_ownership_text" : "GUTSCHEIN ÜBERTRAGEN",
+  "transfer_voucher_amount_text" : "Teilbetrag übertragen ÜBERTRAGEN",
+  "partnerRetailers" : "Partnerhändler",
+  "applyFilter" : "Filter anwenden",
+
+
+  "prog_purchased"  : "Geschenkkarte gekauft",
+  "prog_OwnershipTransferred"  : "Gutschein übertragen",
+  "prog_OwnershipReceived"  : "Gutschein erhalten",
+  "prog_AmountTransferred"  : "Übertragener Betrag",
+  "prog_AmountReceived"  : "Erhaltener Betrag",
+  "prog_Redeemed"  : "Geschenkkarte eingelöst",
+  "coupon_Redeemed"  : "Coupon eingelöst",
+
+
+  "pswd_note"  : "Lassen Sie uns Ihr Kennwort ändern!",
+  "pswd_button"  : "Kennwort ändern",
+
+
+  "invalid_number": "Ungültige Telefonnummer angegeben",
+  "invalid_data"  : "Ungültige Daten angegeben.",
+  "invalid_key"  : "Der Schlüssel sollte mit 0x beginnen.",
+  "invalid_add"  : "Die Adresse sollte mit 0x beginnen.",
+  "wrongcreds"  : "Falsche Anmeldeinformationen!",
+  "auth_failed"  : "Authentifizierung fehlgeschlagen",
+  "auth_title"  : "Biometrische Anmeldung für meine App",
+  "auth_subtitle"  : "Verwenden Sie weiterhin Ihre biometrischen Zugangsdaten",
+  "auth_pswdinstead"  : "Verwenden Sie stattdessen das Kennwort",
+  "message_passwordchange"  : "Bitte warten Sie, während wir Ihr Passwort ändern ...",
+  "message_import"  : "Bitte warten Sie, während wir Ihre Wallet importieren ...",
+  "message_login"  : "Bitte warten Sie, während wir Sie anmelden ...",
+  "message_trans"  : "Bitte warten Sie, während wir übertragen ...",
+  "message_transown"  : "ÜBERTRAGUNG DES GUTSCHEINBETRAGS ",
+  "message_transamount"  : "ÜBERTRAGUNG AN DIE GUTSCHEIN-ID: ",
+  "message_transsuccess"  : "Gutschein erfolgreich übertragen!",
+  "message_transamsuccess"  : "Erfolgreich übertragener Gutscheinbetrag!",
+  "firsttimesignin"  : "Zum ersten Mal ANMELDEN: BESTEHENDE Wallet IMPORTIEREN oder REGISTRIEREN ",
+  "check_internet"  : "Das hat nicht funktioniert! Überprüfen Sie die Internetverbindung. ",
+
+
+  "notif_purchase"  : "Sie haben einen Gutschein gekauft, von ",
+  "notif_voucherrcv"  : "Sie haben einen Gutschein erhalten, von ",
+  "notif_vouchersent" : "Sie haben einen Gutschein gesendet, an ",
+  "notif_amrcv"  : " erhalten von ",
+  "notif_amsent" : " gesendet an ",
+  "notif_redeem"  : "Sie haben einen Gutschein eingelöst, für ",
+  "notif_redeemcoupon" : "Sie haben einen Coupon eingelöst, für ",
+
+
+  "shop_filter"  : "Filter anwenden",
+  "shop_header"  : "Partner Geschäfte",
+  "shop_search"  : "Suche hier",
+  "shop_clearfilter"  : "X löschen:",
+
+
+  "lcard_header"  : "Kundenkarten",
+  "lcard_addcard" : "+ Kundenkarten hinzufügen",
+  "lcard_headerdata" : "Datei",
+  "lcard_cardNumber" : "Info",
+  "lcard_cardName" : "Name",
+  "lcard_cardColor" : "Farbe",
+  "lcard_entername" : "Geben Sie den Kartennamen",
+  "lcard_enternumber" : "Geben Sie den Kartennummer",
+  "lcard_choosecolor" : "Wählen Sie Farbe",
+  "lcard_continue" : "Karte Speichern",
+  "lcard_edit" : "Karte Bearbeiten",
+  "lcard_delete" : "Löschen",
+  "lcard_deletecardmessage" : "Möchten Sie diese Karte löschen?",
+  "lcard_yes" : "Ja",
+  "lcard_no" : "Nein",
+  "lcard_entermanual" : "Daten Manuell Eingeben",
+  "lcard_taphere" : "Tippen Sie auf Bild, um die Ansicht zu ändern",
+
+
+  "extcard_header" : "Gutscheine von Drittanbietern",
+  "extcard_addcard" : "+ Gutschein hinzufügen",
+  "extcard_adddate" : "Datum eingeben",
+
+
+  "navmenu_profile" : "Profil",
+  "navmenu_cardsandvouchers" : "Karten und Gutscheine",
+  "navmenu_3rdpartyvouchers" : "Gutscheine von Drittanbietern",
+  "navmenu_vaccinationQR" : "Impfungen",
+
+
+  "exit_message" : "Möchten Sie beenden?",
+  "exit_messageheader" : "App beenden",
+  "about_us" : "Redimi bietet eine verteilte, dezentrale Infrastruktur für Einkaufszentren und Einzelhändler zur Erstellung und Verwaltung sicherer digitaler Gutscheine. Weitere Informationen: ",
+  "about_us2" : "Redimi ist eine mobile Wallet zum Verwalten (Speichern, Einlösen, Übertragen) von digitalen Gutscheinen, die über eine Blockchain-Infrastruktur verwaltet werden. Dies ermöglicht höchste Sicherheit und Personalisierung für digitale Gutscheine. \n\n➤ Das Wallet ist derzeit ein Prototyp, der in Einkaufszentren getestet wird. \n\nWeitere Funktionen: \n• Virtualisierung von Kundenkarten \n• Verwaltung von digitalen Coupons und Gutscheinen von Drittanbietern \n• Integration von Google Pay für schnelle Zahlungen \n• Fingerabdruck-Authentifizierung \n• Kontaktverwaltung für schnelle Transaktionen \n\n➤ Der Kauf von Gutscheinen ist derzeit nur über unterstützte Einkaufszentren möglich. \n\nWeitere Informationen: ",
+
+
+
+
+  "discount_message" : "Rabatt über",
+  "discount_purchase" : "Einkauf",
+  "coupon_code" : "Coupon Code",
+  "coupon_header" : "Coupons",
+  "invoices_text" : "Rechnungen",
+
+
+  "message_processing" : "Deine Transaktion wird bearbeitet. \nDu wirst benachrichtigt, sobald die Transaktion erfolgreich abgeschlossen ist.",
+  "message_clickanywhere" : "Auf eine beliebige Stell klicken um fortzufahren",
+
+
+  "contact_header" : "Kontakte",
+  "contact_select" : "Kontakt auswählen",
+  "contact_address" : "Adresse",
+  "contact_name" : "Name",
+  "contact_enteraddress" : "Geben Sie die Adresse ein",
+  "contact_entername" : "Geben Sie den Namen ein",
+  "contact_created" : "Neuer Kontakt erstellt",
+  "contact_message" : "Adresse für zukünftige Transaktionen speichern?",
+  "contact_add" : "+ Kontakt hinzufügen",
+  "contact_delete" : "Do you wish to delete this contact?",
+
+
+
+  "new_vaccination" : "+ Impfung hinzufügen",
+
+
+  "question_1" : "Kann ich mit dem Redimi Wallet Gutscheine kaufen?",
+  "answer_1" : "Nein. Der Kauf von Gutscheinen ist nur über den Webshop der Malls und der teilnehmenden Händler möglich.",
+  "question_2" : "Brauche ich das Mobile Wallet, um Gutscheine an jemand anderen zu übertragen?",
+  "answer_2" : "Ja. Die Übertragung von Gutscheinen zwischen Benutzern erfordert, dass beide Parteien das Redimi Wallet installiert haben.",
+  "question_3" : "Was kann ich mit der Redimi Wallet machen?",
+  "answer_3" : "Das Redimi Wallet dient zum Speichern, Übertragen und Einlösen von digitalen Gutscheinen. Sie können die Redimi-Wallet auch für Digitalisierung von Händler-Kundenkarten, Gutscheinen von Drittanbietern, zum Bezahlen mit Google oder Apple Pay, und zum Einbinden Ihres persönlichen Covid19-Impf-QR-Codes.",
+  "question_4" : "Ist die Redimi-Wallet kostenlos?",
+  "answer_4" : "Ja. Die Redimi-Wallet ist absolut kostenlos und wird kostenlos geliefert.",
+  "question_5" : "Muss ich unsere persönlichen Daten angeben, um das Redimi-Wallet zu nutzen?",
+  "answer_5" : "Nein. Benutzer müssen keine persönlichen Daten angeben, um das Redimi-Wallet zu verwenden. Beim Kauf von Gutscheinen über die Website, z.B. das Einkaufszentrum, Benutzer müssen persönliche Informationen wie E-Mail-Adresse und Wohnadresse angeben, zur Durchführung des Zahlungsvorgangs erforderlich.",
+  "question_6" : "Kann jemand anders den QR-Code meines Gutscheins kopieren und einlösen?",
+  "answer_6" : "Nein. Die Gutschein-QR-Codes werden alle 60 Sekunden neu erstellt, um sicherzustellen, dass ein Screenshot des QR-Codes nicht funktioniert.",
+
+  "question_7" : "Ist das Redimi Wallet mit Android und iOS kompatibel?",
+  "answer_7" : "Ja. Redimi Wallet ist für Android und iOS verfügbar.",
+  "question_8" : "Kann ich meine Gutscheine wiederherstellen, wenn ich mein Telefon verliere oder die Brieftasche lösche?",
+  "answer_8" : "Ja. Wenn Sie Ihre Brieftasche erneut importieren, werden alle gekauften Gutscheine und der Transaktionsverlauf angezeigt.",
+  "question_9" : "Funktioniert das Redimi Wallet auch im Offline-Modus?",
+  "answer_9" : "Ja. Sobald die Gutscheine und Transaktionen heruntergeladen wurden, können Sie auch offline auf ihre Details zugreifen.",
+  "question_10" : "Wo kann ich meine digitalen Gutscheine einlösen?",
+  "answer_10" : "Die Gutscheine sind in verschiedenen unterstützten Einkaufszentren und Einzelhändlern einlösbar.",
+  "question_11" : "Kann ich meine digitalen Gutscheine teilen?",
+  "answer_11" : "Ja. Sie können Teilbeträge von Ihren Gutscheinen auf den Gutschein eines anderen Benutzers übertragen oder einen vollständigen Gutschein mit einem Redimi-Wallet an eine andere Person übertragen.",
+  "question_12" : "Sind meine digitalen Gutscheine sicher?",
+  "answer_12" : "Ja. Ihre digitalen Gutscheine sind nur für Sie sichtbar und nur zugänglich, wenn Sie sich über Ihr Passwort oder Ihren Fingerabdruck-Scan anmelden.",
+
+  "old_password": "Altes Passwort",
+  "new_password": "Neues Kennwort",
+  "confirm_new_password": "Bestätige neues Passwort",
+  "gift_card_balance" : "Guthaben der Gutscheine",
+  "saved_gift_cards" : "Gespeicherte Gutscheine",
+  "ready_discount" :"Sind Sie bereit für die digitale Guthabenkarte der nächsten Generation?",
+  "balance" :"Gutscheinkonto",
+  "show" : "Zeigen",
+  "3rd_party" : "Geschenkkarte für Dritte",
+  "search_here" : "Suche hier",
+  "tillyet_no_card" : "Sie haben noch keine Karte erstellt",
+  "add_thiredparty_card": "+ GESCHENKKARTEN/GUTSCHEINE HINZUFÜGEN",
+  "information":"Information",
+  "card_code" : "Kartencode",
+  "enter_code" : "Code eingeben",
+  "tap_image" : "Tippen Sie auf Bild, um die Ansicht zu ändern",
+  "card_name" : "Kartenname",
+  "enter_card_name" : "Geben Sie den Kartennamen ein",
+  "validity" : "Gültigkeit",
+  "select_color" : "Wähle Farbe",
+  "save" : "Speichern",
+  "edit" : "Bearbeiten",
+  "delete" : "Löschen"
+
+}

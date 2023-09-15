@@ -1,0 +1,362 @@
+{
+  "language_selected": "English",
+
+  "balance_length" : "Balance Length",
+  "updated_date": "Updated Date",
+  "balances": "Balances",
+  "balance_code": "Balance Card Id",
+  "currency_code": "Currency Code",
+
+  "rewarded_balance": "Rewards",
+  "convert_rewards": "Convert Rewards",
+  "shop_username": "Shop Username e.g. shop123...",
+  "reward_want_to_convert" : "Enter Rewards you want to convert",
+  "are_you_sure_you_want_to_convert_rewards": "Are you sure you want to convert rewards?",
+
+  "sign_up": "Signing-Up...",
+  "changing_password": "Changing Password...",
+  "sign_out_confirmation": "Are you sure you want to Sign out?",
+  "invalid_amount": "Invalid Amount",
+
+  "face_id_auth": "Face Id Authentication",
+
+  "username_min_char": "Username (Minimum 5 Character)",
+
+  "password_not_matched": "You Old Password is Incorrect",
+
+  "splash_text" : "Your Digital Vouchers\n and Coupons App",
+
+  "giftCard_Amount_transfer_success": "Gift Card Amount Transferred Successfully",
+  "giftCard_Ownership_transfer_success": "Gift Card Ownership Transferred Successfully",
+
+  "incorrect_username": "Incorrect Username or Password",
+  "invalid_code": "Invalid Code",
+
+  "terms_and_conditions" : "Terms and Conditions",
+  "first_term_and_condition" : "By checking this box, I have read and agree to the terms and conditions of this service",
+  "second_term_and_condition" : "(OPTIONAL) I agree to have my username displayed to stores for the purpose of receiving personalized offers and improving my shopping experience via Data Analytics",
+
+  "delete_account": "Delete Account",
+  "delete_account_info": "Are you sure you want to permanently delete your account?",
+
+  "transfer_gift_card_amount" : "Transfer Gift Card Amount",
+  "do_you_wish_to_transfer" : "Do you wish to transfer the Gift Card?",
+  "Cancel" : "Cancel",
+
+  "registered" : "You Registered Successfully",
+  "update_profile_text" : "Update",
+  "faqs_text" : "FAQs",
+  "privacy_text" : "Privacy Policy",
+
+  "error_text" : "Error",
+  "something_went_wrong_text" : "Something went wrong unable to get data",
+  "success_text" : "Success",
+  "user_updated_successfully_text" : "User Updated Successfully",
+  "password_not_match_text" : "Password do not match",
+  "enter_phone_number_text" : "Please enter phone number",
+  "min_8_char_pass_text" : "Minimum 8 character password",
+  "internet_error_text" : "That did not work! Check your internet connection",
+  "something_wrong_text" : "Something went wrong",
+  "please_enter_password": "Please Enter Password",
+  "please_enter_confirm_password": "Please Enter Confirm Password",
+  "please_accept_terms" : "Please Accept Terms and Conditions",
+
+  "enter_phone_verification_code_text" : "Enter Phone Verification Code",
+  "cancel_text" : "CANCEL",
+  "verify_text" : "VERIFY",
+  "password_changed-text" : "Your password has been changed",
+  "fill_field_to_login_text" : "Please fill fields for login",
+
+  "user_name_already_exists" : "Username already exists",
+  "special_char_text" : "Special characters are not allowed in username",
+  "username_short_text" : "Username is too short",
+  "invalid_username_text" : "Invalid username",
+
+
+  "created_wallet_copy" : "Copy Wallet",
+  "created_wallet_gotosign" : "Go to Sign-In",
+  "created_wallet_walletadd" : "Wallet Address",
+  "created_wallet_walletkey" : "Wallet Key",
+  "created_wallet_walletData" : "Wallet Data",
+  "created_wallet_note" : "Note:\n DO NOT share your WALLET KEY with others. Store the KEY externally. In case its lost, the data cannot be recovered.",
+  "created_walletadd_note" : "This is your identification address. You can provide this to friends, family and stores for purchasing and transferring vouchers and more.",
+
+
+
+  "hi" : "Hi, ",
+  "logout" : "Logout",
+  "firstName" : "First Name",
+  "secondName" : "Last Name",
+  "password_text" : "Password",
+  "phone_text" : "Phone",
+  "username_text" : "Username",
+  "please_sign_in_to_continue" : "Please Sign in to Continue",
+  "phone_number_text" : "Phone Number",
+  "enter_username_text" : "Enter Username",
+  "main_login" : "Login",
+
+
+  "import_wallet" : "Import Wallet",
+  "import_wallet_note" : "Let us import.\nEnter your existing wallet key \nand a new password to activate\nyour wallet.",
+  "import_wallet_walletkey" : "Wallet Key e.g. 0x...",
+  "redimi_voucher_balance" : "Redimi Voucher Balance",
+
+  "main_note" : "Already a customer? Let us import your wallet!",
+  "main_register_note" : "No Account yet? ",
+  "main_register" : "Register",
+  "as_guest" : "Sign in as Guest",
+  "or_text" : "OR",
+  "sign_in_text" : "Login",
+  "forget_password_text" : "Forget Password |",
+  "help" :" Help | ",
+  "faq" :"FAQs",
+
+
+  "register_note" : "Welcome to the XRP Grail community! We just need\n some more from you and then yor are ready to go ",
+  "register_password" : "Password (min 8 characters)",
+  "register_gen_wallet" : "Generate Wallet",
+  "register_tel" : "Phone Number e.g., +49123456...",
+  "register_confirmPassword" : "Confirm Password",
+  "register_not_confirm" : "Password do not match",
+  "username_example_text" : "Username e.g. johndoe123...",
+  "reset_password_text" : "Change Password",
+  "finger_print" : "Fingerprint Authentication",
+  "others" :"Others",
+  "language" : "Language",
+  "help_text" : "Help",
+
+
+
+  "settings_aboutus": "About us",
+  "settings_finger": "Fingerprint Authentication",
+  "settings_pswd": "Change Password",
+  "settings_lang": "Change Language/Sprache ändern",
+  "settings_signout": "Sign out",
+  "settings_pdtitle": "ACCESSING WALLET",
+  "settings_pdsubtitle": "Please wait while we access your wallet information...",
+  "settings_copied": "Copied to clipboard.",
+  "settings_header": "Settings",
+  "settings_contact_us": "You can also reach us at: ",
+
+  "trans_header": "Transactions",
+  "transdata_header": "Transaction Data",
+  "transdata_hash": "Transaction Hash/Receipt",
+  "transdata_action": "Transaction Action",
+  "transdata_sendwall": "Sender Wallet",
+  "transdata_rcvwall": "Recipient Wallet",
+  "transdata_id": "Voucher Code",
+  "transdata_idfrom": "Voucher Code From",
+  "transdata_idto": "Voucher Code To",
+  "transdata_amount": "Amount",
+  "transdata_createdat": "Created at",
+  "transdata_webshop": "Shop",
+
+
+  "transown_continue": "Continue",
+  "transown_header": "Transfer Ownership",
+  "transown_button": "Transfer Gift Card",
+
+
+  "transam_header": "Transfer Gift Card Amount",
+  "transam_rcvadd": "Recipient Address e.g. 0x....",
+  "transam_rcvid": "Recipient Voucher Code e.g. 76db28e05....",
+  "transam_amount": "Voucher Amount (in Eur)",
+  "Recipient_Gift_Card_Code": "(Optional) Recipient Gift Card Code e.g. 76db28e05....",
+  "gift_card_amount": "Balance Card Amount (in Eur)",
+  "Amount_Insufficient": "Amount Insufficient",
+  "enter_amount": "Please Enter Amount",
+
+
+  "wallinfo_button": "   Copy Wallet Address",
+
+
+  "vouch_header": "Voucher Data",
+  "vouch_id": "Voucher Id",
+  "vouch_code": "Gift Card Code",
+  "vouch_codeinstr": "Click to copy Code",
+  "vouch_curr": "Current Amount",
+  "vouch_init": "Initial Amount",
+  "vouch_valid": "Validity",
+  "vouch_redeem": "REDEEM BALANCE CARD",
+  "vouch_redeemshort": "Redeem",
+  "vouch_chooseshop": "Filter",
+  "vouch_shopname": "Shop",
+  "vouch_validuntil": "Valid Until:",
+  "vouch_instrqrcode": "QR-Code is made of the above information:",
+  "vouch_instrnote": "QR-Code is only valid for 20 seconds. \nClick on QR-Code to refresh again.",
+  "vouch_countdown": "seconds remaining:",
+  "vouch_totalBalance": "Total Balance",
+  "vouch_totalVouchers": "Gift Cards: ",
+  "vouch_heading" : "Gift Cards",
+  "overview_heading" : "Overview",
+  "date_text" : "Date",
+  "back_text" : "Back",
+  "max_amount_to_redeem_text" : "Amount to Redeem (in EUR), max ",
+  "partnerRetailers" : "Partner Retailers",
+  "applyFilter" : "Apply Filters",
+
+  "transfer_ownership_text" : "TRANSFER ENTIRE GIFT CARD",
+  "transfer_voucher_amount_text" : "TRANSFER PARTIAL AMOUNT",
+  "gift_card_balance" : "Balance",
+  "saved_gift_cards" : "Saved Gift Cards",
+  "ready_discount" :"Are you ready for digital balance card of the next generation",
+  "balance" :"Balance",
+
+
+  "prog_purchased": "Gift Card Purchased",
+  "prog_OwnershipTransferred": "Ownership Transferred",
+  "prog_OwnershipReceived": "Ownership Received",
+  "prog_AmountTransferred": "Amount Transferred",
+  "prog_AmountReceived": "Amount Received",
+  "prog_Redeemed": "Gift Card Redeemed",
+  "coupon_Redeemed": "Coupon Redeemed",
+
+
+  "pswd_note": "Let us change your password!",
+  "pswd_button": "Change Password",
+
+  "invalid_number": "Invalid Phone Number Provided",
+  "invalid_data": "Invalid data provided.",
+  "invalid_key": "Key should start with 0x",
+  "invalid_add": "Address should start with 0x",
+  "wrongcreds": "Wrong credentials!",
+  "auth_failed": "Authentication failed",
+  "auth_title": "Biometric login for my app",
+  "auth_subtitle": "Continue using your biometric credential",
+  "auth_pswdinstead": "Use password instead",
+  "message_passwordchange": "Please wait while we change your password...",
+  "message_import": "Please wait while we import your wallet...",
+  "message_login": "Please wait while we log you in...",
+  "message_trans": "Please wait while we transfer...",
+  "message_transown": "TRANSFERRING OWNERSHIP TO",
+  "message_transamount": "TRANSFERRING VOUCHER AMOUNT",
+  "message_transsuccess": "Voucher transferred succesfully!",
+  "message_transamsuccess": "Voucher amount transferred succesfully!",
+  "firsttimesignin": "For first time SIGN-IN: IMPORT EXISTING WALLET or REGISTER",
+  "check_internet": "That did not work! Check your internet connection.",
+
+
+  "notif_purchase": "You purchased a voucher of",
+  "notif_voucherrcv": "You received a voucher from",
+  "notif_vouchersent": "You sent a voucher to",
+  "notif_amrcv": " received from",
+  "notif_amsent": " sent to",
+  "notif_redeem": "You redeemed a voucher for",
+  "notif_redeemcoupon": "You redeemed a coupon for",
+
+
+  "shop_filter": "Apply Filter",
+  "shop_header": "Partner Retailers",
+  "shop_search": "Search here",
+  "shop_clearfilter": "X clear:",
+
+  "lcard_header": "Loyalty Cards",
+  "lcard_addcard": "Add Loyalty Card",
+  "lcard_headerdata": "Data",
+  "lcard_cardNumber": "Info",
+  "lcard_cardName": "Name",
+  "lcard_cardColor": "Color",
+  "lcard_entername": "Enter Card Name",
+  "lcard_enternumber": "Enter Card Number",
+  "lcard_choosecolor": "Choose Color",
+  "lcard_continue": "Save Card",
+  "lcard_edit": "Edit Card",
+  "lcard_delete": "Delete",
+  "lcard_deletecardmessage": "Do you wish to delete this card?",
+  "lcard_yes": "Yes",
+  "lcard_no": "No",
+  "lcard_entermanual": "Enter Data Manually",
+  "lcard_taphere": "Tap on Image to change view",
+
+
+  "extcard_header": "3rd Party Vouchers",
+  "extcard_addcard": "+ Add Voucher",
+  "extcard_adddate": "Enter Date",
+
+
+  "navmenu_profile": "Profile",
+  "navmenu_cardsandvouchers": "Cards and Vouchers",
+  "navmenu_3rdpartyvouchers": "3rd Party Vouchers",
+  "navmenu_vaccinationQR": "Vaccinations",
+
+
+  "exit_message": "Do you wish to exit?",
+  "exit_messageheader": "Exit App",
+  "about_us": "Redimi provides a decentralized infrastructure for Shopping Centres and Retailers, facilitating voucher issuing and management, leading to tangible benefits and cost-efficiency throughout the entire value chain. For more info, visit us at:",
+  "about_us2": "Redimi is a mobile wallet for managing (storing, redeeming, transferring) digital vouchers managed through a blockchain infrastructure. This enables the highest security and personalization for digital vouchers. \n\n➤ The wallet is currently a prototype which is being tested in shopping centers. \n\nFurther Features: \n• Virtualization of Loyalty Cards \n• Management of 3rd Party Digital Coupons and Vouchers \n• Integration of Google Pay for quick payments \n• Fingerprint authentication \n• Contact Management for quick transactions \n\n➤ Currently, the purchasing of vouchers is only possible via supported Shopping Centers. \n\nFor more info, visit us at:",
+
+  "discount_message": "discount over",
+  "discount_purchase": "purchase",
+  "coupon_code": "Coupon Code",
+  "coupon_header" : "Coupons",
+  "invoices_text" : "Invoices",
+
+
+  "message_processing": "Your transaction is being processed.\nYou will be notified once it goes through.",
+  "message_clickanywhere": "Click anywhere to continue",
+
+  "contact_header": "Contacts",
+  "contact_select": "Select Contact",
+  "contact_address": "Address",
+  "contact_name": "Name",
+  "contact_enteraddress": "Enter Address",
+  "contact_entername": "Enter Name",
+  "contact_created": "New Contact Created",
+  "contact_message": "Save address for future transactions?",
+  "contact_add": "+ Add Contact",
+  "contact_delete": "Do you wish to delete this contact?",
+
+  "new_vaccination": "+ Add Vaccination",
+
+
+  "question_1": "Can I purchase vouchers using the Redimi Wallet?",
+  "answer_1": "No. Purchasing of vouchers is only possible via the webshop of the Malls and participating Retailers.",
+  "question_2": "Do I need the mobile wallet in order to transfer vouchers to someone else?",
+  "answer_2": "Yes. Transferring vouchers between users requires that both parties have installed the Redimi Wallet.",
+  "question_3": "What can I do with the Redimi Wallet?",
+  "answer_3": "The Redimi wallet is used for storing, transfering and redeeming digital vouchers. You can also use the Redimi wallet for digitizing retailer loyalty cards, 3rd Party Vouchers, for paying with Google or Apple Pay, and for integrating your personal covid19 vaccination QR-Code.",
+  "question_4": "Is the Redimi wallet free?",
+  "answer_4": "Yes. The Redimi wallet is absolutely free and comes with no cost.",
+  "question_5": "Do I have to provide our personal data to use the Redimi wallet?",
+  "answer_5": "No. Users are not required to provide any personal information for using the Redimi wallet. However, while purchasing vouchers via the website e.g. the shopping mall, users are required to provide personal information such as email address and residential address, necessary for executing the payment process.",
+  "question_6": "Can somebody else copy the QR Code of my voucher and redeem it?",
+  "answer_6": "No. The voucher QR-Codes are recreated every 60 seconds to ensure that a screenshot taken of the QR Code does not work.",
+
+  "question_7": "Is the Redimi Wallet compatible with android and iOS?",
+  "answer_7": "Yes. Redimi Wallet is available on android and iOS.",
+  "question_8": "Can I restore my vouchers, when I lose my phone or delete the wallet?",
+  "answer_8": "Yes. When you import your wallet again, all purchased vouchers and transaction history will be visible.",
+  "question_9": "Does the Redimi Wallet also work in offline mode?",
+  "answer_9": "Yes. Once the vouchers and transactions are downloaded, you can access their details offline as well.",
+  "question_10": "Where can I redeem my digital vouchers?",
+  "answer_10": "The vouchers are redeemable at various supported Malls and Retailers.",
+  "question_11": "Can I split my digital vouchers?",
+  "answer_11": "Yes. You can transfer partial amounts from your vouchers to another user's voucher or you can transfer a complete voucher to someone else with a Redimi Wallet.",
+  "question_12": "Are my digital vouchers safe?",
+  "answer_12": "Yes. Your digital vouchers are only visible to you and only accessible when you login via your password or fingerprint scan.",
+
+  "old_password": "Old Password",
+  "new_password": "New Password",
+  "confirm_new_password": "Confirm New Password",
+  "show" : "Show",
+  "3rd_party" : "3rd Party Gift Card",
+  "search_here" : "Search Here",
+  "tillyet_no_card" : "You didn't create any card yet",
+  "add_thiredparty_card": "+ ADD GIFT CARDS/COUPONS",
+  "information":"Information",
+  "card_code" : "Card Code",
+  "enter_code" : "Enter Code",
+  "tap_image" : "Tap on Image to change view",
+  "card_name" : "Card Name",
+  "enter_card_name" : "Enter Card Name",
+  "validity" : "Validity",
+  "select_color" : "Select Color",
+  "save" : "Save",
+  "edit" : "Edit",
+  "delete" : "Delete"
+
+
+
+
+
+}
