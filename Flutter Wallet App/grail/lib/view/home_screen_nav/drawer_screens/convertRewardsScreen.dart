@@ -2,19 +2,42 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:grail/controller/home_screen_controller.dart';
-import '../../../controller/transfer_giftcard_controller.dart';
-import '../../../model/user_model.dart';
-import '../../../model/voucher_model.dart';
+import '../../../model/store_model.dart';
 import '../../helper_function/colors.dart';
+import '../../helper_function/custom_snackbar.dart';
 import '../../helper_function/custom_widgets/custom_field.dart';
-import '../../helper_function/qr_code_scanner_view.dart';
 
 
-class ConvertRewardScreen extends StatelessWidget {
+class ConvertRewardScreen extends StatefulWidget {
 
   static final GlobalKey<FormState> _form = GlobalKey<FormState>();
+
+  const ConvertRewardScreen({super.key});
+
+  @override
+  State<ConvertRewardScreen> createState() => _ConvertRewardScreenState();
+}
+
+class _ConvertRewardScreenState extends State<ConvertRewardScreen> {
+
   TextEditingController shopUsernameTextController = TextEditingController();
   TextEditingController rewardTextController = TextEditingController();
+  HomeScreenController homeScreenController = Get.put(HomeScreenController());
+  String dropdownValue = "";
+  double userCurrentRewardsDouble = 0;
+  String userCurrentRewardsString = "";
+
+  @override
+  void initState(){
+    fetchStoresData();
+    super.initState();
+    userCurrentRewardsString = homeScreenController.userModel.rewardBalanceAmount!;
+    userCurrentRewardsDouble = double.parse(userCurrentRewardsString);
+  }
+
+  Future<void> fetchStoresData() async {
+    await homeScreenController.getStores();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +70,7 @@ class ConvertRewardScreen extends StatelessWidget {
           init: HomeScreenController(),
           builder: (controller) {
             return Form(
-              key: _form,
+              key: ConvertRewardScreen._form,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -58,59 +81,80 @@ class ConvertRewardScreen extends StatelessWidget {
                       height: 340.h,
                       child: Column(
                         children: [
+
                           Row(
                             children: [
                               Expanded(
-                                child: CustomTextField(
-                                    title: 'shop_username'.tr,
-                                    controller: shopUsernameTextController,
-                                    isReadOnly: false,
-                                    onChange: (newVal) {},
-                                    suffixIcon: const SizedBox(),
-                                    focusNode: controller.userNameFocusNode,
-                                    keyboardType: TextInputType.text,
-                                    maxLines: 1,
-                                    nextFocusNode: null,
-                                    onSaved: () {},
-                                    validator: (text) {
-                                      if (text!.isEmpty) {
-                                        return "Please Enter Username";
-                                      }
-                                      return null;
-                                    }),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                                  //width: Get.width,
+                                  //height: 75.h,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                    color: MyColors.giftCardDetailsClr,
+                                  ),
+                                  child: Center(
+                                    child: DropdownMenu<String>(
+                                      initialSelection: controller.storeList.first.name,
+                                      hintText: "please_select_store".tr,
+                                      width: Get.width-36,
+                                      // menuStyle: const MenuStyle(
+                                      //   padding: MaterialStatePropertyAll<EdgeInsets>(EdgeInsets.symmetric(horizontal: 10, vertical: 10)),
+                                      // ),
+                                      inputDecorationTheme: InputDecorationTheme(
+                                        border: InputBorder.none,
+                                        isDense: true,
+                                        hintStyle: TextStyle(
+                                          fontSize: 20.sp,
+                                          fontWeight: FontWeight.normal
+                                        )
+                                      ),
+                                      onSelected: (String? value) {
+                                        // This is called when the user selects an item.
+                                        setState(() {
+                                          dropdownValue = value!;
+                                        });
+                                      },
+                                      dropdownMenuEntries: controller.storeList.map<DropdownMenuEntry<String>>((StoreModel store) {
+                                        return DropdownMenuEntry<String>(
+                                            value: store.username!, label: store.name!
+                                        );
+                                      }).toList(),
+                                    ),
+                                  ),
+                                ),
                               ),
-                              //const SizedBox(width: 16.0),
-                              // CircleAvatar(
-                              //   backgroundColor: MyColors.redeemGiftCardBtnClr,
-                              //   child: IconButton(
-                              //     icon: const Icon(
-                              //       Icons.contacts,
-                              //       color: Colors.white,
-                              //     ),
-                              //     onPressed: () {
-                              //       // Add your code here for the contacts button
-                              //       Get.to(ContactScreen(true));
-                              //     },
-                              //   ),
-                              // ),
-                              const SizedBox(
-                                width: 4,
-                              ),
-                              // CircleAvatar(
-                              //   backgroundColor: MyColors.redeemGiftCardBtnClr,
-                              //   child: IconButton(
-                              //     icon: const Icon(
-                              //       Icons.camera_alt,
-                              //       color: Colors.white,
-                              //     ),
-                              //     onPressed: () {
-                              //       Get.to(QRCodeScannerView(true));
-                              //       // Add your code here for the camera button
-                              //     },
-                              //   ),
-                              // ),
                             ],
                           ),
+
+                          const SizedBox(
+                            height: 16,
+                          ),
+
+
+                          // Row(
+                          //   children: [
+                          //     Expanded(
+                          //       child: CustomTextField(
+                          //           title: 'shop_username'.tr,
+                          //           controller: shopUsernameTextController,
+                          //           isReadOnly: false,
+                          //           onChange: (newVal) {},
+                          //           suffixIcon: const SizedBox(),
+                          //           focusNode: controller.userNameFocusNode,
+                          //           keyboardType: TextInputType.text,
+                          //           maxLines: 1,
+                          //           nextFocusNode: null,
+                          //           onSaved: () {},
+                          //           validator: (text) {
+                          //             if (text!.isEmpty) {
+                          //               return "Please Enter Username";
+                          //             }
+                          //             return null;
+                          //           }),
+                          //     ),
+                          //   ],
+                          // ),
                           const SizedBox(
                             height: 16,
                           ),
@@ -123,28 +167,38 @@ class ConvertRewardScreen extends StatelessWidget {
                                 //     hintText: 'gift_card_amount'.tr,
                                 //   ),
                                 // ),
-                                child: CustomTextField(
-                                    title: 'reward_want_to_convert'.tr,
-                                    controller: rewardTextController,
-                                    isReadOnly: false,
-                                    onChange: (newVal) {},
-                                    suffixIcon: const SizedBox(),
-                                    focusNode: controller.voucherAmount,
-                                    keyboardType: TextInputType.number,
-                                    maxLines: 1,
-                                    nextFocusNode: null,
-                                    onSaved: () {},
-                                    validator: (text) {
-                                      int enterAmount = int.parse(text ?? '');
-                                      rewardCount = enterAmount;
-                                      if (text!.isEmpty) {
-                                        return "enter_amount".tr;
-                                      }
-                                      // else if(enterAmount>currentA){
-                                      //   return "Amount_Insufficient".tr;
-                                      // }
-                                      return null;
-                                    }),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                    color: MyColors.giftCardDetailsClr,
+                                  ),
+                                  child: CustomTextField(
+                                      title: 'reward_want_to_convert'.tr,
+                                      controller: rewardTextController,
+                                      isReadOnly: false,
+                                      onChange: (newVal) {},
+                                      suffixIcon: const SizedBox(),
+                                      focusNode: controller.voucherAmount,
+                                      keyboardType: TextInputType.number,
+                                      maxLines: 1,
+                                      nextFocusNode: null,
+                                      onSaved: () {},
+                                      validator: (text) {
+                                        int enterAmount = int.parse(text ?? '');
+                                        rewardCount = enterAmount;
+                                        if (text!.isEmpty) {
+                                          return "enter_amount".tr;
+                                        }
+                                        if(enterAmount < 250){
+                                          return "minimum_rewards_are_250".tr;
+                                        }
+                                        else if(enterAmount > userCurrentRewardsDouble){
+                                          return "Amount_Insufficient".tr;
+                                        }
+                                        return null;
+                                      }),
+                                ),
                               ),
                             ],
                           ),
@@ -156,14 +210,12 @@ class ConvertRewardScreen extends StatelessWidget {
                     padding: EdgeInsets.only(bottom: 30.h),
                     child: GestureDetector(
                       onTap: () {
-                        final isValid = _form!.currentState!.validate();
+                        final isValid = ConvertRewardScreen._form!.currentState!.validate();
                         if (!isValid) {
                           return;
                         }
-                        _form.currentState!.save();
-                        String shopUsername = shopUsernameTextController.text.toString();
-                        String amountInString = rewardTextController.text.toString();
-                        int amountInInt = int.parse(amountInString);
+                        ConvertRewardScreen._form.currentState!.save();
+                        int amountInInt = int.parse(rewardTextController.text.toString());
                         showDialog<String>(
                           context: context,
                           builder: (BuildContext context) => AlertDialog(
@@ -189,7 +241,12 @@ class ConvertRewardScreen extends StatelessWidget {
                               TextButton(
                                 onPressed: () async {
                                   //int rewardCount = int.parse(rewardTextController.text);
-                                  controller.convertRewardsToBalance(shopUsernameTextController.text, rewardCount);
+                                  if(dropdownValue == ""){
+                                    customSnackBar("error_text".tr, "please_select_store".tr, red);
+                                  }
+                                  else{
+                                    controller.convertRewardsToBalance(dropdownValue, rewardCount);
+                                  }
                                 },
                                 child: Text(
                                   'lcard_yes'.tr,
@@ -210,7 +267,7 @@ class ConvertRewardScreen extends StatelessWidget {
                         ),
                         child: Center(
                           child: Text(
-                            "transfer_voucher_amount_text".tr,
+                            "convert_rewards".tr,
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,

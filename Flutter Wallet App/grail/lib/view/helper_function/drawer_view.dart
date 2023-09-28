@@ -107,7 +107,7 @@ class _MyDrawerState extends State<MyDrawer> {
                     width: 6,
                   ),
                   Text(
-                    "extcard_header".tr,
+                    "3rd_party".tr,
                     style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,

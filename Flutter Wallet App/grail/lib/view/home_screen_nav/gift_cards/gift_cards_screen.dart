@@ -34,6 +34,11 @@ class _GiftCardScreenState extends State<GiftCardScreen> {
     super.initState();
   }
 
+  @override
+  void dispose(){
+    super.dispose();
+  }
+
   Future<void> fetchVouchers({bool shouldCleraData = true}) async {
     kPrint("Vpuchers Calling");
     return await homeController.getVoucher(shouldClear: shouldCleraData);
@@ -52,7 +57,7 @@ class _GiftCardScreenState extends State<GiftCardScreen> {
               centerTitle: true,
               automaticallyImplyLeading: false,
               title: Text(
-                "balances".tr,
+                "credits".tr,
                 style: TextStyle(
                   fontSize: 32.sp,
                   fontWeight: FontWeight.w700,
@@ -75,7 +80,7 @@ class _GiftCardScreenState extends State<GiftCardScreen> {
                               child: const SizedBox(
                                   height: 20,
                                   child: Text(
-                                    "Clear Fillter",
+                                    "Clear Filter",
                                     style: TextStyle(color: Colors.black),
                                   )),
                             ),
@@ -431,7 +436,7 @@ class HeaderCell extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
-                    "balance".tr,
+                    "credits".tr,
                     style: TextStyle(
                         color: MyColors.textGrayColor,
                         fontSize: 12.sp,

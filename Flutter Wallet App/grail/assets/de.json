@@ -2,13 +2,16 @@
   "language_selected": "Deutsch",
 
   "balance_length" : "Balance-Länge",
-  "rewarded_balance": "Belohnung",
+  "rewarded_balance": "Grail Punkte",
   "updated_date": "Neues Datum",
   "balances": "Salden",
   "balance_code": "Guthabenkarten-ID",
   "currency_code": "Währungscode",
+  "transaction_amount": "Transaktionshöhe",
+  "please_select_store" : "Bitte wählen Sie Store aus",
+  "minimum_rewards_are_250": "Mindestens 250 Belohnungen erforderlich",
 
-  "convert_rewards": "Prämien umwandeln",
+  "convert_rewards": "Grail Punkte",
   "shop_username": "Shop-Benutzername, z. B. shop123...",
   "reward_want_to_convert" : "Geben Sie die Prämien ein, die Sie umwandeln möchten",
   "are_you_sure_you_want_to_convert_rewards": "Sind Sie sicher, dass Sie Prämien umwandeln möchten?",
@@ -161,7 +164,7 @@
   "transown_button"  : "Gutschein übertragen",
 
 
-  "transam_header"  : "Gutschein-Anteil übertragen",
+  "transam_header"  : "Gutschein-Teilbetrag übertragen",
   "transam_rcvadd"  : "Empfänger Adresse e.g. 0x....",
   "transam_rcvid"  : "Empfänger Gutschein-Code z.b. 76db28e05....",
   "transam_amount"  : "Gutscheinbetrag (in Eur)",
@@ -181,7 +184,7 @@
   "vouch_curr"  : "Aktueller Betrag",
   "vouch_init"  : "Anfangsbetrag",
   "vouch_valid"  : "Gültigkeit",
-  "vouch_redeem"  : "GESCHENKKARTE EINLÖSEN",
+  "vouch_redeem"  : "GESCHEIN GESAMTBETRAG EINLÖSEN",
   "vouch_chooseshop"  : "Filter",
   "vouch_shopname" : "Geschäft",
   "vouch_redeemshort"  : "Einlösen",
@@ -198,12 +201,12 @@
   "max_amount_to_redeem_text" : "Einzulösender Betrag (in EUR), max ",
 
   "transfer_ownership_text" : "GUTSCHEIN ÜBERTRAGEN",
-  "transfer_voucher_amount_text" : "Teilbetrag übertragen ÜBERTRAGEN",
+  "transfer_voucher_amount_text" : "Teilbetrag ÜBERTRAGEN",
   "partnerRetailers" : "Partnerhändler",
   "applyFilter" : "Filter anwenden",
 
 
-  "prog_purchased"  : "Geschenkkarte gekauft",
+  "prog_purchased"  : "Geschein Betrag",
   "prog_OwnershipTransferred"  : "Gutschein übertragen",
   "prog_OwnershipReceived"  : "Gutschein erhalten",
   "prog_AmountTransferred"  : "Übertragener Betrag",
@@ -277,7 +280,7 @@
 
 
   "navmenu_profile" : "Profil",
-  "navmenu_cardsandvouchers" : "Karten und Gutscheine",
+  "navmenu_cardsandvouchers" : "Kundenkarten und Digitale Gutscheine",
   "navmenu_3rdpartyvouchers" : "Gutscheine von Drittanbietern",
   "navmenu_vaccinationQR" : "Impfungen",
 
@@ -346,15 +349,16 @@
   "old_password": "Altes Passwort",
   "new_password": "Neues Kennwort",
   "confirm_new_password": "Bestätige neues Passwort",
-  "gift_card_balance" : "Guthaben der Gutscheine",
+  "gift_card_balance" : "Gutschein Guthaben",
   "saved_gift_cards" : "Gespeicherte Gutscheine",
-  "ready_discount" :"Sind Sie bereit für die digitale Guthabenkarte der nächsten Generation?",
+  "ready_discount" :"Bist du bereit für digitale Gutscheine auf der XRP Ledger?",
   "balance" :"Gutscheinkonto",
   "show" : "Zeigen",
-  "3rd_party" : "Geschenkkarte für Dritte",
+  "3rd_party" : "Andere Gescheine",
   "search_here" : "Suche hier",
-  "tillyet_no_card" : "Sie haben noch keine Karte erstellt",
-  "add_thiredparty_card": "+ GESCHENKKARTEN/GUTSCHEINE HINZUFÜGEN",
+  "tillyet_no_card" : "Du hast noch keine kundenkarten hinzugefügt",
+  "till_yet_no_card" : "Sie haben noch keine anderen Gutscheine hinzugefügt",
+  "add_thiredparty_card": "+ ANDERE GUTSCHEIN HINZUFÜGEN",
   "information":"Information",
   "card_code" : "Kartencode",
   "enter_code" : "Code eingeben",
@@ -365,6 +369,9 @@
   "select_color" : "Wähle Farbe",
   "save" : "Speichern",
   "edit" : "Bearbeiten",
-  "delete" : "Löschen"
+  "delete" : "Löschen",
+  "credits": "Salden",
+  "credit": "Betrag",
+  "transaction_done": "Ihre Transaktion wurde erfolgreich durchgeführt"
 
 }

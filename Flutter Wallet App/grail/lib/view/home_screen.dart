@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
         }
       }
     });
-
+    homeScreenController.getStores();
     // TODO: implement initState
     super.initState();
   }
@@ -214,7 +214,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
             currentIndex: homeScreenController.currentIndex.value,
             onTap: homeScreenController.changePage,
-            selectedItemColor: MyColors.redeemGiftCardBtnClr,
+            selectedItemColor: MyColors.lightBlueColor,
             showSelectedLabels: true,
             showUnselectedLabels: true,
             unselectedLabelStyle: const TextStyle(color: Colors.white),
@@ -242,7 +242,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                   // icon: Image.asset("assets/voucher.png",
                   //     height: 32.h, width: 32.w),
                   label: homeScreenController.currentIndex.value == 1
-                      ? "balances".tr
+                      ? "credits".tr
                       : ""),
               // BottomNavigationBarItem(
               //     backgroundColor: Colors.white,

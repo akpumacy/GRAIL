@@ -14,23 +14,34 @@ class TransactionDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     String giftCardText = "";
-    if(transactionModel!.orderStatus == "redeem"){
+    if (transactionModel!.orderStatus == "redeem") {
       giftCardText = "prog_Redeemed".tr;
     }
-    if(transactionModel!.actionName == "transferOwnership" || transactionModel!.orderStatus == "outgoingComplete"){
+    if (transactionModel!.orderStatus == "outgoingComplete") {
       giftCardText = "prog_OwnershipTransferred".tr;
     }
-    if(transactionModel!.orderStatus == "incomingComplete"){
+    if (transactionModel!.orderStatus == "incomingComplete") {
       giftCardText = "prog_OwnershipReceived".tr;
     }
-    if(transactionModel!.orderStatus == "outgoingPartial"){
+    if (transactionModel!.orderStatus == "outgoingTransfer") {
       giftCardText = "prog_AmountTransferred".tr;
     }
-    if(transactionModel!.orderStatus == "incomingPartial"){
+    if (transactionModel!.orderStatus == "incomingTransfer") {
       giftCardText = "prog_AmountReceived".tr;
     }
-    if(transactionModel!.orderStatus == "create"){
+    if (transactionModel!.orderStatus == "purchase") {
       giftCardText = "prog_purchased".tr;
+    }
+    if (transactionModel!.orderStatus == "convertRewards") {
+      giftCardText = "convert_rewards".tr;
+    }
+
+    String giftCardAmountSign = "";
+    if(transactionModel!.orderStatus == "redeem" || transactionModel!.orderStatus == "outgoingTransfer"){
+      giftCardAmountSign = "-${transactionModel!.amount}";
+    }
+    if(transactionModel!.orderStatus == "incomingTransfer" || transactionModel!.orderStatus == "purchase" || transactionModel!.orderStatus == "convertRewards"){
+      giftCardAmountSign = "+${transactionModel!.amount}";
     }
 
     return Scaffold(
@@ -148,6 +159,34 @@ class TransactionDetailsScreen extends StatelessWidget {
               child: SizedBox(
                 width: Get.width,
                 child: Text( giftCardText,
+                  textAlign: TextAlign.right,
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black),
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(top: 6, left: 12),
+              child: SizedBox(
+                width: Get.width,
+                child: Text(
+                  "transaction_amount".tr,
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: colorPrimaryDark),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 6, right: 12, bottom: 12),
+              child: SizedBox(
+                width: Get.width,
+                child: Text( giftCardAmountSign,
                   textAlign: TextAlign.right,
                   style: const TextStyle(
                       fontSize: 16,
@@ -293,20 +332,20 @@ class TransactionDetailsScreen extends StatelessWidget {
             //   color: Colors.grey,
             // ),
 
-            Padding(
-              padding: const EdgeInsets.only(top: 6, left: 12),
-              child: SizedBox(
-                width: Get.width,
-                child: Text(
-                  "transdata_idfrom".tr,
-                  textAlign: TextAlign.left,
-                  style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: colorPrimaryDark),
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.only(top: 6, left: 12),
+            //   child: SizedBox(
+            //     width: Get.width,
+            //     child: Text(
+            //       "transdata_idfrom".tr,
+            //       textAlign: TextAlign.left,
+            //       style: const TextStyle(
+            //           fontSize: 16,
+            //           fontWeight: FontWeight.w500,
+            //           color: colorPrimaryDark),
+            //     ),
+            //   ),
+            // ),
             // Padding(
             //   padding: const EdgeInsets.only(
             //       top: 6, right: 12, left: 12, bottom: 12),
@@ -357,10 +396,10 @@ class TransactionDetailsScreen extends StatelessWidget {
             //     ],
             //   ),
 
-            const Divider(
-              height: 1,
-              color: Colors.grey,
-            ),
+            // const Divider(
+            //   height: 1,
+            //   color: Colors.grey,
+            // ),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

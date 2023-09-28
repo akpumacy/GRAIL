@@ -44,11 +44,10 @@ class HomeScreenController extends GetxController {
   // var getCouponsURL = Uri.parse("https://pumacy-vm2.westeurope.cloudapp.azure.com/api/coupons/getCoupons20");
 
   var getContactsURL = Uri.parse("https://pumacy-vm4.germanywestcentral.cloudapp.azure.com/api/accounts/getUsernameFromPhone");
-  var deleteAccountURL = Uri.parse(
-      "https://pumacy-vm2.westeurope.cloudapp.azure.com/api/accounts/deleteAccount");
-  var changePasswordURL = Uri.parse(
-      "https://pumacy-vm4.germanywestcentral.cloudapp.azure.com/api/accounts/changePassword");
+  var deleteAccountURL = Uri.parse("https://pumacy-vm2.westeurope.cloudapp.azure.com/api/accounts/deleteAccount");
+  var changePasswordURL = Uri.parse("https://pumacy-vm4.germanywestcentral.cloudapp.azure.com/api/accounts/changePassword");
   var convertRewardURL = Uri.parse("https://pumacy-vm4.germanywestcentral.cloudapp.azure.com/api/balances/convertRewards");
+  var getStoresURL = Uri.parse("https://pumacy-vm4.germanywestcentral.cloudapp.azure.com/api/stores/getStores");
 
   UserModel userModel = UserModel();
   VoucherResponse voucherResponse = VoucherResponse();
@@ -642,26 +641,34 @@ class HomeScreenController extends GetxController {
 
 
   Future<void> convertRewardsToBalance(String shopName, int rewardCount) async {
-    Get.to(TransactionProcessing(transactionDone));
+    Get.off(TransactionProcessing(transactionDone));
     await refreshHash();
     String? userN = userModel.username;
     String? userHash = userModel.clientHash;
+    // final jsonBody = {
+    //   'mall_username': shopName,
+    //   'customer_username': userN,
+    //   'customer_hash': userHash,
+    //   'reward_amount': rewardCount
+    // };
+    // final response = await http.post(convertRewardURL, body: jsonBody);
+    print("It is Going to Convert");
     final response = await http.post(
       convertRewardURL,
       headers: <String, String>{'Content-Type': 'application/json'},
       body: json.encode(
         {
-          "mall_username": shopName,
-          "customer_username": userN,
-          "customer_hash": userHash,
-          "reward_amount": rewardCount
+          'mall_username': shopName,
+          'customer_username': userN,
+          'customer_hash': userHash,
+          'reward_amount': rewardCount
         },
       ),
     );
     if (response.statusCode == 200) {
       //CustomProgressDialog.instance.hideProgressDialog(() {});
       print("200 convert");
-      int userReward = int.parse(userModel.rewardBalanceAmount!);
+      double userReward = double.parse(userModel.rewardBalanceAmount!);
       userReward = userReward - rewardCount;
       userModel.rewardBalanceAmount = userReward.toString();
       double balanceCount = rewardCount * 0.01;
@@ -671,14 +678,16 @@ class HomeScreenController extends GetxController {
       Get.back();
       Get.back();
       Get.back();
+      saveUserData();
       update();
-      customSnackBar("success_text".tr, "Your password has been changed".tr, colorPrimary);
+      customSnackBar("success_text".tr, "transaction_done".tr, colorPrimary);
       print("Password Changed");
     } else {
       //CustomProgressDialog.instance.hideProgressDialog(() {});
       Get.back();
       Get.back();
       Get.back();
+      print(response.body);
       customSnackBar("error_text".tr, "something_went_wrong_text".tr, red);
     }
   }
@@ -700,26 +709,32 @@ class HomeScreenController extends GetxController {
     userModel.vouchersLength = null;
   }
 
-  // Future<void> getStores() async {
-  //   await refreshHash();
-  //   final username = userModel.username;
-  //   String clientHashString = userModel.clientHash!;
-  //   final jsonBody = {'username': username, 'client_hash': clientHashString};
-  //
-  //   final response = await http.post(getStoresURL, body: jsonBody);
-  //   if (response.statusCode == 200) {
-  //     final storesObject = json.decode(response.body);
-  //     storeList.clear();
-  //
-  //     for (var json in storesObject) {
-  //       StoreModel s = StoreModel.fromJson(json);
-  //       storeList.add(s);
-  //     }
-  //     kPrint("You get Stores Successfully");
-  //   } else {
-  //     customSnackBar("error_text".tr, "something_went_wrong_text".tr, red);
-  //     kPrint("Failed to load Stores");
-  //     kPrint(response.body);
-  //   }
-  // }
+  Future<void> getStores() async {
+    await refreshHash();
+    final username = userModel.username;
+    String clientHashString = userModel.clientHash!;
+    final jsonBody = {'username': username, 'client_hash': clientHashString};
+
+    final response = await http.post(getStoresURL, body: jsonBody);
+    if (response.statusCode == 200) {
+      final storesObject = json.decode(response.body);
+      storeList.clear();
+
+      for (var json in storesObject) {
+        StoreModel s = StoreModel.fromJson(json);
+        storeList.add(s);
+      }
+      kPrint("You get Stores Successfully");
+    } else {
+      customSnackBar("error_text".tr, "something_went_wrong_text".tr, red);
+      kPrint("Failed to load Stores");
+      kPrint(response.body);
+    }
+  }
+
+  void saveUserData(){
+    prefs.setString("balanceLength", userModel.balanceLength!);
+    prefs.setString("balanceAmount", userModel.balanceAmount!);
+    prefs.setString("rewardBalanceAmount", userModel.rewardBalanceAmount!);
+  }
 }

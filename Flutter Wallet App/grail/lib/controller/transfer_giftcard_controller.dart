@@ -3,10 +3,12 @@ import 'dart:convert';
 import 'package:dbcrypt/dbcrypt.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:grail/controller/home_screen_controller.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart';
 import '../model/user_model.dart';
+import '../model/voucher_model.dart';
 import '../view/helper_function/colors.dart';
 import '../view/helper_function/custom_snackbar.dart';
 import '../view/helper_function/transaction_processing_screen.dart';
@@ -32,6 +34,7 @@ class TransferGiftCardController extends GetxController {
   bool transactionDone = false;
 
   //bool voucherRecipientScan = false;
+  HomeScreenController homeScreenController = Get.put(HomeScreenController());
 
   late SharedPreferences prefs;
 
@@ -148,6 +151,7 @@ class TransferGiftCardController extends GetxController {
       // eventBus.fire(ownerShip);
       PartialTransfer ownerShip = PartialTransfer(amount: amount, voucherCode: balanceId);
       eventBus.fire(ownerShip);
+      deductAmountFromBalance(amount, balanceId);
       transactionDone = true;
       Get.back();
       Get.back();
@@ -200,6 +204,18 @@ class TransferGiftCardController extends GetxController {
       kPrint("Refreshing Hashed Failed");
     }
   }
+
+  void deductAmountFromBalance(double amountToDeduct, String balanceCardId){
+    String? userBalance = homeScreenController.userModel.balanceAmount;
+    double userBal = double.parse(userBalance!);
+    userBal = userBal - amountToDeduct;
+    homeScreenController.userModel.balanceAmount = userBal.toString();
+    Voucher voucher = homeScreenController.giftCardsList.firstWhere((v) => v.idNr == balanceCardId);
+    voucher.currentAmount -= amountToDeduct;
+    homeScreenController.saveUserData();
+    homeScreenController.update();
+  }
+
 }
 
 class OwnershipTransfer {

@@ -6,6 +6,7 @@ class Voucher {
   String? webShopName;
   String? webShopUsername;
   String? webShopSite;
+  String? webShopLogo;
 
   Voucher({
     this.currentAmount,
@@ -14,7 +15,8 @@ class Voucher {
     this.webShopSite,
     this.idNr,
     this.currencyCode,
-    this.updatedAt
+    this.updatedAt,
+    this.webShopLogo
   });
 
   factory Voucher.fromJson(json) {
@@ -25,7 +27,8 @@ class Voucher {
       webShopSite: json['webshopSite'] ?? "",
       idNr: json['idNr'] ?? "",
       currencyCode: json["currencyCode"] ?? "",
-      updatedAt: json["updatedAt"] ?? ""
+      updatedAt: json["updatedAt"] ?? "",
+      webShopLogo: json["webshopLogo"] ?? ""
     );
   }
 }

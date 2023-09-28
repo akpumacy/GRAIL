@@ -133,7 +133,7 @@ class VoucherDetailScreen extends StatelessWidget {
                         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "transdata_amount".tr,
+                            "credit".tr,
                             style: TextStyle(
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w500,

@@ -6,9 +6,12 @@
   "balances": "Balances",
   "balance_code": "Balance Card Id",
   "currency_code": "Currency Code",
+  "transaction_amount": "Transaction Amount",
+  "please_select_store" : "Please Select Store",
+  "minimum_rewards_are_250": "Minimum 250 rewards required",
 
-  "rewarded_balance": "Rewards",
-  "convert_rewards": "Convert Rewards",
+  "rewarded_balance": "Reward Tokens",
+  "convert_rewards": "Convert Tokens",
   "shop_username": "Shop Username e.g. shop123...",
   "reward_want_to_convert" : "Enter Rewards you want to convert",
   "are_you_sure_you_want_to_convert_rewards": "Are you sure you want to convert rewards?",
@@ -157,12 +160,12 @@
   "transown_button": "Transfer Gift Card",
 
 
-  "transam_header": "Transfer Gift Card Amount",
+  "transam_header": "Transfer Gift Card Credit",
   "transam_rcvadd": "Recipient Address e.g. 0x....",
   "transam_rcvid": "Recipient Voucher Code e.g. 76db28e05....",
   "transam_amount": "Voucher Amount (in Eur)",
   "Recipient_Gift_Card_Code": "(Optional) Recipient Gift Card Code e.g. 76db28e05....",
-  "gift_card_amount": "Balance Card Amount (in Eur)",
+  "gift_card_amount": "Gift Card Credit (in Eur)",
   "Amount_Insufficient": "Amount Insufficient",
   "enter_amount": "Please Enter Amount",
 
@@ -177,7 +180,7 @@
   "vouch_curr": "Current Amount",
   "vouch_init": "Initial Amount",
   "vouch_valid": "Validity",
-  "vouch_redeem": "REDEEM BALANCE CARD",
+  "vouch_redeem": "REDEEM ENTIRE CREDIT",
   "vouch_redeemshort": "Redeem",
   "vouch_chooseshop": "Filter",
   "vouch_shopname": "Shop",
@@ -191,19 +194,19 @@
   "overview_heading" : "Overview",
   "date_text" : "Date",
   "back_text" : "Back",
-  "max_amount_to_redeem_text" : "Amount to Redeem (in EUR), max ",
+  "max_amount_to_redeem_text" : "Credit to Redeem (in EUR), max ",
   "partnerRetailers" : "Partner Retailers",
   "applyFilter" : "Apply Filters",
 
   "transfer_ownership_text" : "TRANSFER ENTIRE GIFT CARD",
-  "transfer_voucher_amount_text" : "TRANSFER PARTIAL AMOUNT",
-  "gift_card_balance" : "Balance",
+  "transfer_voucher_amount_text" : "TRANSFER PARTIAL CREDIT",
+  "gift_card_balance" : "Gift Card Credit",
   "saved_gift_cards" : "Saved Gift Cards",
-  "ready_discount" :"Are you ready for digital balance card of the next generation",
+  "ready_discount" :"Are you ready for XRPL Powered Gift Cards and Rewards Tokens",
   "balance" :"Balance",
 
 
-  "prog_purchased": "Gift Card Purchased",
+  "prog_purchased": "Gift Card Credit Purchased",
   "prog_OwnershipTransferred": "Ownership Transferred",
   "prog_OwnershipReceived": "Ownership Received",
   "prog_AmountTransferred": "Amount Transferred",
@@ -339,9 +342,10 @@
   "new_password": "New Password",
   "confirm_new_password": "Confirm New Password",
   "show" : "Show",
-  "3rd_party" : "3rd Party Gift Card",
+  "3rd_party" : "3rd Party Gift Cards",
   "search_here" : "Search Here",
   "tillyet_no_card" : "You didn't create any card yet",
+  "till_yet_no_card" : "You didn't create any card yet",
   "add_thiredparty_card": "+ ADD GIFT CARDS/COUPONS",
   "information":"Information",
   "card_code" : "Card Code",
@@ -353,10 +357,8 @@
   "select_color" : "Select Color",
   "save" : "Save",
   "edit" : "Edit",
-  "delete" : "Delete"
-
-
-
-
-
+  "delete" : "Delete",
+  "credits": "Credits",
+  "credit": "Credit",
+  "transaction_done": "Your Transaction has been done successfully"
 }

@@ -25,7 +25,7 @@ Widget transactionCard(TransactionModel t, BuildContext context){
   }
   if(t.orderStatus == "incomingTransfer"){
     giftCardText = "prog_AmountReceived".tr;
-    imageAssetPath = "assets/amount_send.png";
+    imageAssetPath = "assets/transactionCome.png";
   }
   if(t.orderStatus == "purchase"){
     giftCardText = "prog_purchased".tr;

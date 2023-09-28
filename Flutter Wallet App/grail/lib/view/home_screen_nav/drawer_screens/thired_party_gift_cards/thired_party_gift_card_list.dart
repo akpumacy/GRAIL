@@ -212,7 +212,11 @@ class _LoyaltyAndThiredPartyGiftCardScreenState
                                           .value
                                           .isEmpty
                                       ? Center(
-                                          child: Text("tillyet_no_card".tr),
+                                          child: Text(
+                                              widget.isThiredParty
+                                          ? "till_yet_no_card".tr
+                                              : "tillyet_no_card".tr
+                                          ),
                                         )
                                       : ListView.builder(
                                           padding: EdgeInsets.only(top: 20.h),

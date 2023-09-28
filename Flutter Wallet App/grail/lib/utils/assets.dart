@@ -19,4 +19,9 @@ class MyAssets {
   static const String termsCondition = 'assets/icon_images/terms-condition.png';
   static const String faceIdAuth = 'assets/icon_images/face_id.png';
   static const String rewardCardIcon = 'assets/icon_images/reward.png';
+  static const String grailLogo = 'assets/grail_logo.png';
+  static const String grailIcon = 'assets/grail_icon.png';
+  static const String giftCardCredit = 'assets/icon_images/giftCardCreditGrail.png';
+  static const String loyaltyCardGrail = 'assets/icon_images/loyaltyCardGrail.png';
+  static const String thirdPartyGrail = 'assets/icon_images/thirdPartyGrail.png';
 }

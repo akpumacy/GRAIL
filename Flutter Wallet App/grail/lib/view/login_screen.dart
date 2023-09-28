@@ -184,7 +184,7 @@ class _LoginScreenState extends State<LoginScreen>
     kPrint("bottom $bottom");
     return Scaffold(
         key: _scaffoldKey,
-        backgroundColor: MyColors.newAppPrimaryColor,
+        backgroundColor: MyColors.lightBlueColor,
         resizeToAvoidBottomInset: false,
         // appBar: AppBar(
         //   toolbarHeight: 30.h,
@@ -201,17 +201,19 @@ class _LoginScreenState extends State<LoginScreen>
                     height: 270.h,
                     width: double.infinity,
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
-                    color: MyColors.newAppPrimaryColor,
+                    color: MyColors.lightBlueColor,
                     child: Stack(
                         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Align(
                             alignment: Alignment.center,
                             child: Image.asset(
-                              MyAssets.loginBG2,
-                              fit: BoxFit.fill,
+                              MyAssets.grailLogo,
+                              //fit: BoxFit.fill,
                               //height: 200.h,
-                              width: double.infinity,
+                              // width: double.infinity,
+                              height: 102.h,
+                              width: 260.w,
                             ),
                           ),
                           // Align(
@@ -231,7 +233,7 @@ class _LoginScreenState extends State<LoginScreen>
                     height: 200.h,
                     width: Get.width,
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
-                    color: MyColors.newAppPrimaryColor,
+                    color: MyColors.lightBlueColor,
                     child: Stack(
                         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

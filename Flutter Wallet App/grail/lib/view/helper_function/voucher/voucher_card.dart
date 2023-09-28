@@ -38,17 +38,21 @@ class VoucherCard extends StatelessWidget {
           ),
       child: Stack(
         children: [
-          // SizedBox(
-          //   height: 130.h,
-          //   width: Get.width,
-          //   child: ClipRRect(
-          //     borderRadius: const BorderRadius.only(
-          //         topLeft: Radius.circular(15), topRight: Radius.circular(15)),
-          //     child: CommonProfileImage(
-          //       imageUrl: voucher.cover!,
-          //     ),
-          //   ),
-          // ),
+          Align(
+            alignment: Alignment.topLeft,
+            child: Container(
+              height: 98.h,
+              width: 180.w,
+              padding: EdgeInsets.only(left: 18.w, top: 16.h),
+              child: ClipRRect(
+                // borderRadius: const BorderRadius.only(
+                //     topLeft: Radius.circular(15), topRight: Radius.circular(15)),
+                child: CommonProfileImage(
+                  imageUrl: voucher.webShopLogo!,
+                ),
+              ),
+            ),
+          ),
 
           //*********************** Price Cell ***********************
 
@@ -109,6 +113,62 @@ class VoucherCard extends StatelessWidget {
           ),
 
           //*********************** First Container ***********************
+          // if(voucher.webShopLogo != "")
+          //   Positioned(
+          //     top: 0,
+          //     right: 0,
+          //     left: 20.h,
+          //     bottom: 20.h,
+          //     child: Align(
+          //       alignment: Alignment.bottomLeft,
+          //       child: SizedBox(
+          //         height: 32.h,
+          //         width: 80.w,
+          //         child: FittedBox(
+          //           fit: BoxFit.fill,
+          //           child:
+          //           // Image.asset(
+          //           //   "assets/grail_logo.png",
+          //           // ),
+          //           CommonProfileImage(
+          //             imageUrl: voucher.webShopLogo!,
+          //             needPlaceH: false,
+          //           ),
+          //         ),
+          //         //  Image.asset(
+          //         //   "assets/redimi_logo_v3.png",
+          //         // ),
+          //       ),
+          //     ),
+          //   ),
+          // if(voucher.webShopLogo == "")
+          //   Positioned(
+          //     top: 0,
+          //     right: 0,
+          //     left: 20.h,
+          //     bottom: 20.h,
+          //     child: Align(
+          //       alignment: Alignment.bottomLeft,
+          //       child: SizedBox(
+          //         height: 32.h,
+          //         width: 80.w,
+          //         child: FittedBox(
+          //           fit: BoxFit.fill,
+          //           child:
+          //           Image.asset(
+          //             "assets/grail_logo.png",
+          //           ),
+          //           // CommonProfileImage(
+          //           //   imageUrl: voucher.webShopLogo!,
+          //           //   needPlaceH: false,
+          //           // ),
+          //         ),
+          //         //  Image.asset(
+          //         //   "assets/redimi_logo_v3.png",
+          //         // ),
+          //       ),
+          //     ),
+          //   ),
           Positioned(
             top: 0,
             right: 0,
@@ -117,11 +177,12 @@ class VoucherCard extends StatelessWidget {
             child: Align(
               alignment: Alignment.bottomLeft,
               child: SizedBox(
-                height: 32.h,
-                width: 80.w,
+                height: 28.h,
+                width: 74.w,
                 child: FittedBox(
                   fit: BoxFit.fill,
-                  child: Image.asset(
+                  child:
+                  Image.asset(
                     "assets/grail_logo.png",
                   ),
                   // CommonProfileImage(

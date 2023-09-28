@@ -26,7 +26,7 @@ class _OverviewScreenState extends State<OverviewScreen> {
     switch (index) {
       case 0:
         return GridModel(
-            image: MyAssets.giftCard,
+            image: MyAssets.giftCardCredit,
             count: "${_homeScreenController.userModel.balanceAmount}€",
             title: "gift_card_balance");
       case 1:
@@ -36,10 +36,10 @@ class _OverviewScreenState extends State<OverviewScreen> {
             title: "rewarded_balance");
       case 2:
         return GridModel(
-            image: MyAssets.loyality, count: "0", title: "lcard_header");
+            image: MyAssets.loyaltyCardGrail, count: "0", title: "lcard_header");
       case 3:
         return GridModel(
-            image: MyAssets.savedGiftCards,
+            image: MyAssets.thirdPartyGrail,
             count: '0', //_homeScreenController.userModel.vouchersLength,
             title: "3rd_party");
       default:
@@ -72,28 +72,28 @@ class _OverviewScreenState extends State<OverviewScreen> {
   @override
   Widget build(BuildContext context) {
     return
-        // GetBuilder<HomeScreenController>(
-        //     init: HomeScreenController(),
-        //     builder: (homeScreenController) {
-        //       // homeScreenController.getVoucher();
-        //       return
+        GetBuilder<HomeScreenController>(
+            init: HomeScreenController(),
+            builder: (homeScreenController) {
+              // homeScreenController.getVoucher();
+              return
         Scaffold(
       key: _scaffoldKey,
-      backgroundColor: MyColors.newAppPrimaryColor,
+      backgroundColor: MyColors.lightBlueColor,
       appBar: AppBar(
         toolbarHeight: 30.h,
         elevation: 0,
         automaticallyImplyLeading: false,
-        backgroundColor: MyColors.newAppPrimaryColor,
+        backgroundColor: MyColors.lightBlueColor,
       ),
       drawer: const MyDrawer(),
       body: Column(
         children: [
           Container(
-            height: 250.h,
+            height: 285.h,
             width: double.infinity,
             padding: EdgeInsets.symmetric(horizontal: 20.w),
-            color: MyColors.newAppPrimaryColor,
+            color: MyColors.lightBlueColor,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -125,11 +125,26 @@ class _OverviewScreenState extends State<OverviewScreen> {
                             : const Icon(Icons.person),
                       ),
                     ),
-                    _topHeader(const Icon(Icons.notifications_none))
+                    //_topHeader(const Icon(Icons.notifications_none))
                   ],
                 ),
                 SizedBox(
-                  height: 34.h,
+                  height: 6.h,
+                ),
+                Center(
+                  child: SizedBox(
+                    height: 102.h,
+                    width: 260.w,
+                    child: FittedBox(
+                      fit: BoxFit.fill,
+                      child: Image.asset(
+                        "assets/grail_logo.png",
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 6.h,
                 ),
                 Text(
                   "hi".tr + _homeScreenController.userModel.firstName!,
@@ -141,7 +156,7 @@ class _OverviewScreenState extends State<OverviewScreen> {
                       fontWeight: FontWeight.w700),
                 ),
                 SizedBox(
-                  height: 28.h,
+                  height: 16.h,
                 ),
                 Text(
                   "ready_discount".tr,
@@ -232,212 +247,32 @@ class _OverviewScreenState extends State<OverviewScreen> {
                     // ),
                   ),
 
-                  // SizedBox(
-                  //   height: 10.h,
-                  // ),
-
-                  Container(
-                    height: 95.h,
-                    width: double.infinity,
-                    margin: EdgeInsets.symmetric(horizontal: 23.w),
-                    child: Card(
-                      elevation: 5,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Center(
-                        child: Image.asset(
-                          MyAssets.casFlow,
-                          scale: 4,
-                        ),
-                      ),
-                    ),
-                  )
+                  // Transaction Grid Model
+                  // Container(
+                  //   height: 95.h,
+                  //   width: double.infinity,
+                  //   margin: EdgeInsets.symmetric(horizontal: 23.w),
+                  //   child: Card(
+                  //     elevation: 5,
+                  //     shape: RoundedRectangleBorder(
+                  //         borderRadius: BorderRadius.circular(15)),
+                  //     child: Center(
+                  //       child: Image.asset(
+                  //         MyAssets.casFlow,
+                  //         scale: 4,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // )
                 ],
               ),
             ),
           ))
 
-          ////////
-          // SizedBox(
-          //   height: 30.h,
-          // ),
-
-          // Padding(
-          //   padding: EdgeInsets.only(left: 20, right: 20),
-          //   child: Container(
-          //     height: 60.h,
-          //     width: 310,
-          //     color: Colors.transparent,
-          //     child: Text(
-          //       "hi".tr + homeScreenController.userModel.firstName!,
-          //       style: TextStyle(
-          //           color: Colors.white,
-          //           fontSize: 32,
-          //           fontWeight: FontWeight.bold),
-          //     ),
-          //   ),
-          // ),
-
-          // SizedBox(
-          //   height: 30.h,
-          // ),
-          ///////////
-
-          // Padding(
-          //   padding: EdgeInsets.only(left: 36, right: 36),
-          //   child: Container(
-          //     height: 124,
-          //     width: 350,
-          //     color: Colors.white,
-          //     child: Row(
-          //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //       children: [
-          //         Padding(
-          //           padding: EdgeInsets.only(left: 26.w),
-          //           child: Container(
-          //             height: 120,
-          //             width: 250.w,
-          //             color: Colors.transparent,
-          //             child: Column(
-          //               children: [
-          //                 Padding(
-          //                   padding: EdgeInsets.only(left: 40.w, top: 18.h),
-          //                   child: Text(homeScreenController.userModel.vouchersAmount + " EUR", style: const TextStyle(
-          //                       color: Colors.black, fontSize: 32, fontWeight: FontWeight.w600
-          //                   ),),
-          //                 ),
-          //                 Padding(
-          //                   padding: EdgeInsets.only(left: 20.w, top: 10.h),
-          //                   child: Center(
-          //                     child: Container(
-          //                       height: 36,
-          //                       width: 250.w,
-          //                       child: Center(
-          //                         child: Text("redimi_voucher_balance".tr, maxLines: 2, textAlign: TextAlign.center, style: const TextStyle(
-          //                             color: gray_1, fontSize: 16, fontWeight: FontWeight.w600
-          //                         ),),
-          //                       ),
-          //                     ),
-          //                   ),
-          //                 ),
-          //               ],
-          //             ),
-          //           ),
-          //         ),
-          //         Padding(
-          //           padding: EdgeInsets.only(right: 4),
-          //           child: Container(
-          //             height: 120,
-          //             width: 30,
-          //             child: Column(
-          //               children: [
-          //                 const SizedBox(
-          //                   height: 6,
-          //                 ),
-          //                 Container(
-          //                   height: 24,
-          //                   width: 24,
-          //                   decoration: const BoxDecoration(
-          //                     color: colorPumacyGreen,
-          //                     shape: BoxShape.circle,
-          //                   ),
-          //                   child: const Center(
-          //                     child: Text("i", style: TextStyle(
-          //                       color: Colors.white, fontSize: 16
-          //                     ),),
-          //                   ),
-          //                 ),
-          //               ],
-          //             ),
-          //           ),
-          //         ),
-          //       ],
-          //     ),
-          //   ),
-          // ),
-          //
-          //
-          // SizedBox(height: 36.h,),
-
-          /// From Here.......................
-
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 36, right: 36),
-          //   child: Container(
-          //     height: 160.h,
-          //     width: 350,
-          //     color: Colors.white,
-          //     child: Column(
-          //       mainAxisAlignment: MainAxisAlignment.center,
-          //       children: [
-          //         Text(
-          //           homeScreenController.userModel.vouchersAmount! +
-          //               " EUR",
-          //           style: const TextStyle(
-          //               color: Colors.black,
-          //               fontSize: 32,
-          //               fontWeight: FontWeight.w600),
-          //         ),
-          //         const SizedBox(
-          //           height: 10,
-          //         ),
-          //         Center(
-          //           child: Text(
-          //             "redimi_voucher_balance".tr,
-          //             maxLines: 2,
-          //             textAlign: TextAlign.center,
-          //             style: const TextStyle(
-          //                 color: gray_1,
-          //                 fontSize: 16,
-          //                 fontWeight: FontWeight.w600),
-          //           ),
-          //         ),
-          //       ],
-          //     ),
-          //   ),
-          // ),
-
-          // SizedBox(
-          //   height: 36.h,
-          // ),
-
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 36, right: 36),
-          //   child: Container(
-          //     height: 160.h,
-          //     width: 350,
-          //     color: Colors.white,
-          //     child: Column(
-          //       mainAxisAlignment: MainAxisAlignment.center,
-          //       children: [
-          //         Text(
-          //           "coupon_header".tr,
-          //           style: const TextStyle(
-          //               color: Colors.black, fontSize: 28),
-          //         ),
-          //         const Padding(
-          //           padding: EdgeInsets.only(
-          //               left: 36, right: 36, top: 8, bottom: 8),
-          //           child: Divider(
-          //             height: 1,
-          //             color: Colors.black,
-          //           ),
-          //         ),
-          //         Text(
-          //           homeScreenController.userModel.couponsLength!,
-          //           style: const TextStyle(
-          //               color: Colors.black,
-          //               fontSize: 32,
-          //               fontWeight: FontWeight.w600),
-          //         ),
-          //       ],
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );
-    //});
+    });
   }
 
   Widget _topHeader(Widget child) {

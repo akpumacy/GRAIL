@@ -42,7 +42,7 @@ class MyColors {
   static const Color giftCardDetailColor = Color(0xff7F85D7);
   static const Color purpleAppBarColor = Color(0xFF3700B3);
   static const Color greenTealColor = Color(0xFF018786);
-  static const Color lightBlueColor = Color(0xFF3184b5);
+  static const Color lightBlueColor = Color(0xFF87CEFA);
   static const Color darkBlueColor = Color(0xFF363EAD);
   static const Color newAppPrimaryColor = Color(0xFF3E3E70);
   static const Color transferGiftCardBtnColor = Color(0xFF363EAD);

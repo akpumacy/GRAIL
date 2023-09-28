@@ -82,45 +82,50 @@ class _TransactionsScreenState extends State<TransactionsScreen> {
                                         String date = entry.key;
                                         List<TransactionModel> transactions =
                                             entry.value;
-                                        return Column(
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  left: 16, right: 16),
-                                              child: transactionDateCard(date),
-                                            ),
-                                            // const Padding(
-                                            //   padding: EdgeInsets.only(
-                                            //       top: 6, bottom: 6),
-                                            //   child: Divider(
-                                            //     height: 1,
-                                            //     color: gray_1,
-                                            //   ),
-                                            // ),
-                                            Column(
-                                              children: transactions
-                                                  .map((t) => Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                    .only(
-                                                                left: 18,
-                                                                right: 18,
-                                                                top: 6,
-                                                                bottom: 6),
-                                                        child: InkWell(
-                                                          onTap: () {
-                                                            Get.to(
-                                                                TransactionDetailsScreen(t));
-                                                          },
-                                                          child:
-                                                              transactionCard(
-                                                                  t, context),
-                                                        ),
-                                                      ))
-                                                  .toList()
-                                                  .cast<Widget>(),
-                                            ),
-                                          ],
+                                        return RefreshIndicator(
+                                          onRefresh: () async {
+                                            await fetchTransactions(shouldClear: false);
+                                          },
+                                          child: Column(
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 16, right: 16),
+                                                child: transactionDateCard(date),
+                                              ),
+                                              // const Padding(
+                                              //   padding: EdgeInsets.only(
+                                              //       top: 6, bottom: 6),
+                                              //   child: Divider(
+                                              //     height: 1,
+                                              //     color: gray_1,
+                                              //   ),
+                                              // ),
+                                              Column(
+                                                children: transactions
+                                                    .map((t) => Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                      .only(
+                                                                  left: 18,
+                                                                  right: 18,
+                                                                  top: 6,
+                                                                  bottom: 6),
+                                                          child: InkWell(
+                                                            onTap: () {
+                                                              Get.to(
+                                                                  TransactionDetailsScreen(t));
+                                                            },
+                                                            child:
+                                                                transactionCard(
+                                                                    t, context),
+                                                          ),
+                                                        ))
+                                                    .toList()
+                                                    .cast<Widget>(),
+                                              ),
+                                            ],
+                                          ),
                                         );
                                       })
                                       .toList()
